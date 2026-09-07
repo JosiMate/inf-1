@@ -1,6 +1,16 @@
 site_name: Informatyka 1TT
 site_description: Materiały do lekcji informatyki w zakresie rozszerzonym — klasa 1TT, technikum
 site_author: PCEiKZ Szczucin
+
+# Adres docelowy strony. Przy GitHub Pages dla repozytorium projektowego
+# ma postać https://<użytkownik>.github.io/<nazwa-repo>/ — zmień, jeśli
+# nazwiesz repozytorium inaczej albo podepniesz własną domenę.
+site_url: https://JoziMate.github.io/informatyka-1tt/
+
+# Włącza w nagłówku odnośnik do repozytorium i przycisk "Edytuj tę stronę".
+repo_url: https://github.com/JoziMate/informatyka-1tt
+repo_name: JoziMate/informatyka-1tt
+edit_uri: edit/main/docs/
 copyright: PCEiKZ Szczucin — materiały do użytku edukacyjnego
 
 theme:
@@ -36,6 +46,7 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.footer
+    - content.action.edit
     - toc.follow
     - search.suggest
     - search.highlight
