@@ -1,0 +1,101 @@
+site_name: Informatyka 1TT
+site_description: Materiały do lekcji informatyki w zakresie rozszerzonym — klasa 1TT, technikum
+site_author: PCEiKZ Szczucin
+copyright: PCEiKZ Szczucin — materiały do użytku edukacyjnego
+
+theme:
+  name: material
+  language: pl
+  icon:
+    logo: material/console
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.png
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Przełącz na tryb jasny
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Przełącz na tryb ciemny
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Przełącz na tryb automatyczny
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tooltips
+
+extra_css:
+  - assets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: "#"
+      permalink_title: Odnośnik do tej sekcji
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  # Ikony Material/Octicons zapisywane jako :material-nazwa: — bez tego
+  # rozszerzenia shortcode'y zostają w tekście jako goły napis.
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
+plugins:
+  # Wyszukiwarka lunr nie ma polskiego stemmera (biblioteka lunr-languages
+  # nie wspiera polskiego), więc świadomie zostawiamy tokenizer domyślny.
+  # Wyszukiwanie po polsku działa, ale bez odmiany przez przypadki:
+  # "wymagania" znajdzie "wymagania", nie znajdzie "wymaganiom".
+  - search
+
+nav:
+  - Start: index.md
+  - Dział I. Urządzenia komputerowe w sieci:
+      - Systemy operacyjne w środowisku sieciowym: dzial-1/systemy-operacyjne.md
+
+extra:
+  social:
+    - icon: material/school
+      link: https://www.pceikz.pl
+      name: PCEiKZ Szczucin
+  generator: false
+
+not_in_nav: |
+  /assets/

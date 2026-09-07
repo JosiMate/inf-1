@@ -1,0 +1,83 @@
+/* ---------------------------------------------------------------
+   Informatyka 1TT — drobne korekty wobec domyślnego Material
+   --------------------------------------------------------------- */
+
+/* Tabele wymagań bywają szerokie — pozwól im oddychać i przewijać się
+   we własnym kontenerze zamiast rozpychać stronę. */
+.md-typeset table:not([class]) {
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.md-typeset table:not([class]) th {
+  white-space: nowrap;
+}
+
+/* Listy wymagań są długie — nieco ciaśniejszy rytm czyta się lepiej. */
+.md-typeset ul li {
+  margin-bottom: 0.25em;
+}
+
+/* Kafelki działów na stronie głównej: równa wysokość, wyraźna ramka. */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0.4rem;
+  transition: border-color 125ms, box-shadow 125ms;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+/* Poziomy ocen jako nagłówki H2 — subtelna linia oddzielająca,
+   żeby przy przewijaniu długiej strony było widać, gdzie zaczyna się
+   kolejna ocena. */
+.md-typeset h2 {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  padding-top: 0.8em;
+  margin-top: 1.6em;
+}
+
+.md-typeset h1 + h2,
+.md-typeset h2:first-of-type {
+  border-top: none;
+}
+
+/* --------------------------------- wydruk ---------------------------------
+   Uczniowie i rodzice drukują wymagania. Domyślnie Material drukuje też
+   nawigację i stopkę — usuń je i zmniejsz marginesy. */
+@media print {
+  .md-header,
+  .md-sidebar,
+  .md-footer,
+  .md-top,
+  .md-content__button {
+    display: none !important;
+  }
+
+  .md-main__inner,
+  .md-content {
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .md-typeset {
+    font-size: 10pt;
+  }
+
+  .md-typeset h1,
+  .md-typeset h2 {
+    break-after: avoid;
+  }
+
+  .md-typeset table,
+  .md-typeset .admonition {
+    break-inside: avoid;
+  }
+
+  /* Nie drukuj adresów URL po linkach — strona i tak jest drukowana
+     jako dokument, a przypisy z adresami tylko zaśmiecają. */
+  .md-typeset a::after {
+    content: none !important;
+  }
+}
