@@ -506,7 +506,7 @@ ocenę wyższą.
 2. Odpowiedzi wpisuj w jasne pola. Rozciągają się same, gdy tekstu jest więcej.
 3. Zrzut ekranu robisz skrótem ++win+shift+s++, zaznaczasz fragment, a potem
    wklejasz w wyznaczoną ramkę skrótem ++ctrl+v++.
-4. Zapisz plik pod nazwą `1TT_NrWDziennku_SO.docx` — na przykład
+4. Zapisz plik pod nazwą `1TT_NrWDzienniku_SO.docx` — na przykład
    `1TT_12_SO.docx`.
 
 ### Jak ją oddać
