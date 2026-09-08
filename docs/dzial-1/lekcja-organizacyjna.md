@@ -480,7 +480,7 @@ sprawdzianem działowym — to jest lista, według której powstają zadania.
 
 Pełne wymagania w jednym dokumencie — do wydruku albo przekazania rodzicom.
 
-[:material-file-word: Wymagania edukacyjne (.docx)](../pliki/wymagania-edukacyjne-1tt.docx){ .md-button download }
+[:material-file-word: Wymagania edukacyjne (.docx)](../pliki/wymagania-edukacyjne-1tt.docx){ .md-button download="wymagania-edukacyjne-1tt.docx" }
 
 ---
 

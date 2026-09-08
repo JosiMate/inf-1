@@ -520,7 +520,7 @@ pobierz pustą kartę i wypełnij ją w Wordzie.
 
 ### Jeśli wolisz wypełnić w Wordzie
 
-[:material-file-word: Pobierz pustą kartę pracy (.docx)](../pliki/karta-pracy-systemy-operacyjne.docx){ .md-button download }
+[:material-file-word: Pobierz pustą kartę pracy (.docx)](../pliki/karta-pracy-systemy-operacyjne.docx){ .md-button download="karta-pracy-systemy-operacyjne.docx" }
 
 ### Jak ją wypełnić
 
