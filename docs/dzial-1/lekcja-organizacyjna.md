@@ -80,7 +80,7 @@ co jest wpisane przy trójce — nawet jeśli zrobiło się coś trudniejszego.
   zapowiadane z co najmniej tygodniowym wyprzedzeniem
 - **kartkówki** z bieżącego materiału (do trzech ostatnich lekcji), bez zapowiedzi
 - **karty pracy** wypełniane przy komputerze i odsyłane przez Dziennik VULCAN
-- **ćwiczenia i zadania praktyczne**, w tym programy w języku C++
+- **ćwiczenia i zadania praktyczne**, w tym programy w języku Python
 - **projekty zespołowe** — oceniane za efekt końcowy, wkład własny i prezentację
 - **odpowiedzi ustne, aktywność i praca domowa**
 - **osiągnięcia w konkursach i olimpiadach informatycznych**
@@ -400,7 +400,7 @@ sprawdzianem działowym — to jest lista, według której powstają zadania.
     - automatyzuje pracę w arkuszu za pomocą makropoleceń lub skryptów
     - opracowuje narzędzie do analizy danych na potrzeby szkoły lub własnego projektu i przedstawia wnioski z przeprowadzonej analizy
 
-??? abstract "Dział VI. Algorytmika i programowanie w języku C++ — 24 godz."
+??? abstract "Dział VI. Algorytmika i programowanie w języku Python — 24 godz."
 
     | Temat | Godz. |
     | --- | :---: |
@@ -420,7 +420,7 @@ sprawdzianem działowym — to jest lista, według której powstają zadania.
 
     - definiuje pojęcie specyfikacji algorytmu, określa dane i wyniki dla prostego problemu
     - omawia różne sposoby przedstawiania algorytmów: opis słowny, lista kroków, pseudokod
-    - stosuje w języku C++ podstawowe konstrukcje programistyczne: operacje wejścia i wyjścia, instrukcję warunkową, operatory matematyczne i logiczne
+    - stosuje w języku Python podstawowe konstrukcje programistyczne: wczytywanie i wypisywanie danych, instrukcję warunkową, operatory matematyczne i logiczne
     - definiuje pojęcie pozycyjnego systemu liczbowego, wymienia systemy liczbowe stosowane w informatyce oraz definiuje pojęcia bitu i bajtu
     - definiuje pojęcie palindromu i określa, czy dany napis lub liczba są palindromami
     - wymienia podstawowe własności liczb pierwszych i sprawdza, czy dana liczba jest pierwsza, stosując algorytm naiwny
@@ -431,17 +431,17 @@ sprawdzianem działowym — to jest lista, według której powstają zadania.
     **Ocena dostateczna (3)** — wymagania podstawowe *(spełnia wymagania na ocenę niższą, a ponadto)*
 
     - planuje kolejne kroki rozwiązania problemu, programuje i testuje rozwiązanie, sprawdza działanie algorytmu dla różnych danych
-    - tworzy w języku C++ programy wykonujące działania na liczbach całkowitych
+    - tworzy w języku Python programy wykonujące działania na liczbach całkowitych
     - dokonuje konwersji między pozycyjnymi systemami liczbowymi, wykorzystując zależności między systemami binarnym i ósemkowym oraz binarnym i heksadecymalnym
-    - omawia sposób reprezentowania liczb całkowitych w komputerze, wymienia i stosuje typy danych służące do ich zapisu (short int, int, long int, long long int, unsigned)
-    - opisuje reprezentację znaków i napisów (char, string), odwołuje się do znaku w napisie za pomocą indeksu, wyjaśnia, czym jest tablica kodów ASCII
+    - omawia sposób reprezentowania liczb całkowitych w komputerze i wyjaśnia, czym różni się typ int w Pythonie, o nieograniczonym zakresie, od typów o stałej długości używanych w innych językach
+    - opisuje reprezentację znaków i napisów (typ str), odwołuje się do znaku w napisie za pomocą indeksu, wyjaśnia, czym jest tablica kodów ASCII, i stosuje funkcje ord oraz chr
     - omawia działanie operacji logicznych i reprezentację ich wyników w komputerze
     - tworzy programy do konwersji między liczbami w systemach binarnym i decymalnym oraz konwertujące liczbę dziesiętną na liczbę w podanym systemie pozycyjnym
-    - wykonuje operacje na napisach: wczytuje napisy ze spacjami, sprawdza długość napisu, zamienia wielkość liter, porównuje znaki, znajduje i usuwa fragmenty napisów
-    - definiuje własne funkcje w języku C++, wyjaśnia celowość ich stosowania, rozróżnia parametry formalne i aktualne
+    - wykonuje operacje na napisach: wczytuje napisy ze spacjami, sprawdza długość napisu, zamienia wielkość liter, porównuje znaki, wycina i zastępuje fragmenty napisów
+    - definiuje własne funkcje w języku Python, wyjaśnia celowość ich stosowania, rozróżnia parametry formalne i aktualne
     - rozkłada liczbę złożoną na czynniki pierwsze i wyznacza liczby bliźniacze
     - wykonuje działania arytmetyczne na liczbach w różnych systemach pozycyjnych
-    - pisze program realizujący algorytm Euklidesa w wersjach z dzieleniem i odejmowaniem, stosując funkcję typu void
+    - pisze program realizujący algorytm Euklidesa w wersjach z dzieleniem i odejmowaniem, stosując funkcję niezwracającą wartości
     - pisze program szyfrujący informację szyfrem Cezara i stosuje w programach operacje plikowe – wczytywanie danych z pliku i zapis wyniku do pliku
 
     **Ocena dobra (4)** — wymagania rozszerzające *(spełnia wymagania na ocenę niższą, a ponadto)*
@@ -449,12 +449,12 @@ sprawdzianem działowym — to jest lista, według której powstają zadania.
     - dobiera struktury i typy danych do rodzaju problemu
     - posługuje się środowiskiem programistycznym, strukturami danych oraz językiem programowania w stopniu umożliwiającym implementację omawianych algorytmów
     - stosuje binarną reprezentację liczby w algorytmie szybkiego podnoszenia do potęgi
-    - realizuje w języku C++ algorytmy sprawdzające, czy dany napis jest palindromem, oraz wyszukujące palindromy w zdaniach
-    - opisuje i stosuje popularne funkcje oraz metody dla zmiennych typu string (toupper, tolower, size, substr, erase)
-    - wykonuje obliczenia na dowolnie dużych liczbach, wykorzystując napisy; wyjaśnia różnicę między operacjami na liczbach o podstawie od 1 do 9 i większej od 10
+    - realizuje w języku Python algorytmy sprawdzające, czy dany napis jest palindromem, oraz wyszukujące palindromy w zdaniach
+    - opisuje i stosuje popularne metody napisów (upper, lower, len, wycinki, replace, find)
+    - wykonuje obliczenia na dowolnie dużych liczbach zapisanych jako napisy i porównuje własną implementację z wbudowanym typem int, który w Pythonie nie ma ograniczenia zakresu
     - stosuje odejmowanie w dzieleniu pisemnym liczb binarnych oraz dodawanie liczby przeciwnej zapisanej w kodzie U2 przy odejmowaniu liczb binarnych
-    - stosuje strukturę do reprezentacji liczb wymiernych i wykorzystuje algorytm Euklidesa do działań na ułamkach
-    - stosuje zmienne lokalne i globalne oraz przekazywanie parametrów przez wartość
+    - stosuje krotkę lub własną klasę do reprezentacji liczb wymiernych i wykorzystuje algorytm Euklidesa do działań na ułamkach; porównuje wynik z modułem fractions
+    - stosuje zmienne lokalne i globalne, wyjaśnia, że argumenty przekazywane są przez odwołanie do obiektu, i przewiduje skutki modyfikowania obiektu zmiennego wewnątrz funkcji
     - omawia szyfr Vigenère'a; pisze program szyfrujący szyfrem Cezara z uwzględnieniem polskich znaków diakrytycznych
     - pisze programy zamieniające liczby z systemu decymalnego na system heksadecymalny
 

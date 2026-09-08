@@ -89,7 +89,7 @@ jeszcze pusta. Tematy zapisane *kursywą* to sprawdziany działowe.
 | *Wiesz, umiesz, zdasz – podsumowanie działu* | 4 | — |
 | Współdziałanie aplikacji – projekt zespołowy | 3 | *w przygotowaniu* |
 
-### Dział VI. Algorytmika i programowanie w języku C++
+### Dział VI. Algorytmika i programowanie w języku Python
 
 *24 godziny*
 
