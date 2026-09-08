@@ -150,9 +150,10 @@ sformatowanego w systemie plików Linuksa.
 
     W odpowiedzi znajdź wiersz `File System Name`.
 
-**Zapisz w zeszycie:** literę dysku, jego system plików i pojemność. Jeśli
-w komputerze jest więcej niż jeden dysk lub partycja, sprawdź każdą — bywa, że
-dysk systemowy ma NTFS, a przenośny exFAT.
+**Wynik zapisz w karcie pracy — zadanie 1.** Potrzebujesz litery dysku, systemu
+plików, pojemności i wolnego miejsca, a do tego zrzutu ekranu. Jeśli w komputerze
+jest więcej niż jeden dysk lub partycja, sprawdź każdą — bywa, że dysk systemowy
+ma NTFS, a przenośny exFAT.
 
 ---
 
@@ -199,8 +200,10 @@ defrag C: /A
 Przełącznik `/A` oznacza *analizuj*: polecenie tylko raportuje stan i niczego nie
 zmienia.
 
-**Sformułuj wniosek** w zeszycie według wzoru: *dysk C: jest typu … , poziom
-fragmentacji wynosi … %, defragmentacja jest / nie jest zalecana, ponieważ … .*
+**Wynik i wniosek zapisz w karcie pracy — zadanie 2.** Wniosek sformułuj według
+wzoru: *dysk C: jest typu … , poziom fragmentacji wynosi … %, defragmentacja jest
+/ nie jest zalecana, ponieważ … .* Uzasadnienie ma odwoływać się do budowy
+nośnika, a nie do samego procentu.
 
 !!! tip "Kiedy defragmentacja HDD ma sens"
 
@@ -305,6 +308,9 @@ twoje.
     na koncie prywatnym. Usunięcie konta Google jest nieodwracalne po upływie
     okresu karencji, a razem z kontem znika poczta, dysk i wszystko, co było
     z nim powiązane.
+
+    To ćwiczenie robimy wspólnie na lekcji i **nie wchodzi do karty pracy** —
+    w karcie odpowiadasz tylko na pytania o konta i hasła.
 
 ---
 
@@ -482,9 +488,47 @@ fsutil fsinfo volumeinfo C:
 
 ---
 
+## Praca do oddania
+
+Z tego tematu oddajesz **kartę pracy** — wypełniasz ją na komputerze, nie
+w zeszycie.
+
+[:material-file-word: Pobierz kartę pracy (.docx)](../pliki/karta-pracy-systemy-operacyjne.docx){ .md-button .md-button--primary download }
+
+Karta zbiera to, co robiłeś przy komputerze w ćwiczeniach 1 i 2, plus pytania
+o polecenia tekstowe, konta i hasła. Na końcu jest jedno zadanie do wyboru na
+ocenę wyższą.
+
+### Jak ją wypełnić
+
+1. Otwórz plik w programie Word (albo w Wordzie w przeglądarce, albo
+   w LibreOffice Writer — kartę da się wypełnić w każdym z nich).
+2. Odpowiedzi wpisuj w jasne pola. Rozciągają się same, gdy tekstu jest więcej.
+3. Zrzut ekranu robisz skrótem ++win+shift+s++, zaznaczasz fragment, a potem
+   wklejasz w wyznaczoną ramkę skrótem ++ctrl+v++.
+4. Zapisz plik pod nazwą `1TT_Nazwisko_Imie_SO.docx` — na przykład
+   `1TT_Kowalski_Jan_SO.docx`.
+
+### Jak ją oddać
+
+Wchodzisz w **Dziennik VULCAN → Zadania domowe**, otwierasz zadanie *Systemy
+operacyjne — karta pracy* i dołączasz plik jako załącznik. Jeśli w twoim widoku
+załączniki są niedostępne, wklej odpowiedzi w pole tekstowe, a zrzuty ekranu
+opisz słowami — wtedy zamiast obrazka podaj odczytane wartości.
+
+!!! warning "Zanim wyślesz — zasłoń to, czego nie chcesz oddawać"
+
+    Zrzuty z poleceń `systeminfo` i `ipconfig` potrafią pokazać numer seryjny,
+    identyfikator produktu i nazwę komputera. Zamaluj je przed wklejeniem.
+    To temat o bezpieczeństwie, więc zacznij od siebie — a przy okazji masz
+    gotową odpowiedź na pytanie z zadania 3.
+
+---
+
 ## Zadania sprawdzające
 
-Odpowiedzi sprawdź dopiero po samodzielnej próbie.
+To pytania do samodzielnego sprawdzenia się przed sprawdzianem — **nie oddajesz
+ich**, odpowiedzi masz od razu pod spodem. Pracę do oddania opisano wyżej.
 
 ??? question "1. Wymień pięć zadań systemu operacyjnego."
 

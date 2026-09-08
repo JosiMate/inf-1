@@ -12,10 +12,11 @@ z odpowiedziami. Strona przydaje się w trzech sytuacjach — gdy chcesz wróci�
 czegoś z lekcji, gdy nadrabiasz nieobecność i gdy przygotowujesz się do
 sprawdzianu działowego.
 
-!!! info "Czego tu nie ma"
+!!! info "Co gdzie jest"
 
-    Ocen, terminów i zadań do odesłania — te są w **Librusie** i to on jest
-    kanałem obowiązującym. Ta strona zawiera wyłącznie treści do nauki.
+    Na tej stronie są **treści do nauki** oraz **karty pracy do pobrania**.
+    Oceny, terminy i odsyłanie wykonanych prac — to wszystko w **Dzienniku
+    VULCAN**, który pozostaje kanałem obowiązującym.
 
 Materiały pojawiają się w miarę realizacji programu, więc część tematów jest
 jeszcze pusta. Tematy zapisane *kursywą* to sprawdziany działowe.
