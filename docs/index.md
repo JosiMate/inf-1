@@ -23,6 +23,8 @@ jeszcze pusta. Tematy zapisane *kursywą* to sprawdziany działowe.
 
 ## Spis tematów
 
+<div class="spis-tematow" markdown>
+
 ### Dział I. Urządzenia komputerowe w sieci
 
 *12 godzin*
@@ -102,6 +104,8 @@ jeszcze pusta. Tematy zapisane *kursywą* to sprawdziany działowe.
 | Algorytm Euklidesa i działania na ułamkach | 3 | *w przygotowaniu* |
 | Szyfr Cezara i inne szyfry podstawieniowe | 3 | *w przygotowaniu* |
 | *Wiesz, umiesz, zdasz – podsumowanie działu* | 1 | — |
+
+</div>
 
 ---
 

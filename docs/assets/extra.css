@@ -81,3 +81,36 @@
     content: none !important;
   }
 }
+
+/* --------------------- spis tematów na stronie głównej ---------------------
+   Sześć tabel działowych domyślnie dobiera szerokość kolumn osobno, zależnie
+   od najdłuższego tematu w danym dziale. Efekt: kolumny „Godz." i „Materiały"
+   skaczą w bok przy przewijaniu. Ustalamy stały podział, wspólny dla
+   wszystkich tabel. */
+.spis-tematow .md-typeset__table {
+  display: block;            /* domyślnie inline-block, czyli szerokość
+                                dopasowana do treści — dlatego każda tabela
+                                wychodziła inna */
+  width: 100%;
+}
+
+.spis-tematow table:not([class]) {
+  display: table;            /* j.w. — Material daje tabelom inline-block */
+  table-layout: fixed;
+  width: 100%;
+  min-width: 32rem;          /* na wąskich ekranach tabela przewija się
+                                w swoim kontenerze zamiast zgniatać kolumny */
+}
+
+.spis-tematow table:not([class]) th:nth-child(1),
+.spis-tematow table:not([class]) td:nth-child(1) { width: 62%; }
+
+.spis-tematow table:not([class]) th:nth-child(2),
+.spis-tematow table:not([class]) td:nth-child(2) { width: 11%; }
+
+.spis-tematow table:not([class]) th:nth-child(3),
+.spis-tematow table:not([class]) td:nth-child(3) { width: 27%; }
+
+/* Przy stałym układzie długie tytuły muszą się łamać, a nie wychodzić poza
+   komórkę. */
+.spis-tematow table:not([class]) td { overflow-wrap: anywhere; }
