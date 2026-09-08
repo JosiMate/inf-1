@@ -1,0 +1,98 @@
+{
+  "id": "onp",
+  "tytul": "Odwrotna notacja polska (ONP)",
+  "przedmiot": "PCEiKZ Szczucin · informatyka, zakres rozszerzony · klasa 3",
+  "klasa": "3TT",
+  "sufiks": "ONP",
+  "zadania": [
+    {
+      "nr": 1,
+      "tytul": "Obliczanie na kartce",
+      "poziom": "wymagania podstawowe · ocena 3",
+      "polecenie": "Policz wartości wyrażeń z ćwiczenia 1, prowadząc tabelkę stanu stosu. Wpisz wynik oraz stan stosu po każdym kroku — w postaci ciągu, np. <code>[5] [5,1] [5,1,2] [5,3]</code>.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z1_a_wynik", "7 2 3 * −  → wynik", ""],
+          ["z1_a_slad", "7 2 3 * −  → kolejne stany stosu", ""],
+          ["z1_b_wynik", "4 5 + 2 /  → wynik", ""],
+          ["z1_b_slad", "4 5 + 2 /  → kolejne stany stosu", ""],
+          ["z1_c_wynik", "2 3 4 ^ ^  → wynik", ""],
+          ["z1_c_slad", "2 3 4 ^ ^  → kolejne stany stosu", ""]
+        ]},
+        { "typ": "tekst", "id": "z1_potega", "wiersze": 3,
+          "pytanie": "Przykład (c) daje inny wynik, niż podpowiada intuicja „liczymy od lewej”. Wyjaśnij dlaczego." }
+      ]
+    },
+    {
+      "nr": 2,
+      "tytul": "Zamiana na ONP",
+      "poziom": "wymagania podstawowe i rozszerzające · oceny 3–4",
+      "polecenie": "Zamień wyrażenia z ćwiczenia 1 na ONP, prowadząc tabelkę stosu operatorów i wyniku.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z2_d", "( 8 − 3 ) * 2  → ONP", ""],
+          ["z2_e", "6 + 4 / 2 − 1  → ONP", ""],
+          ["z2_f", "3 ^ 2 ^ 2  → ONP", ""],
+          ["z2_f_wartosc", "3 ^ 2 ^ 2  → wartość", ""]
+        ]},
+        { "typ": "zrzut", "id": "z2_zrzut", "opis": "tabelka śladu dla jednego z wyrażeń (zdjęcie zeszytu albo zrzut ekranu)" },
+        { "typ": "tekst", "id": "z2_nawiasy", "wiersze": 3,
+          "pytanie": "Co dzieje się z nawiasami przy zamianie na ONP i dlaczego zapis bez nich pozostaje jednoznaczny?" }
+      ]
+    },
+    {
+      "nr": 3,
+      "tytul": "Kalkulator ONP w Pythonie",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Uzupełnij funkcję <code>oblicz_onp</code> w szkielecie i uruchom testy.",
+      "pola": [
+        { "typ": "tekst", "id": "z3_kod", "wiersze": 12, "pytanie": "Wklej treść funkcji oblicz_onp." },
+        { "typ": "tabela", "wiersze": [
+          ["z3_testy", "Liczba zaliczonych testów zadania 1", "z pięciu"],
+          ["z3_wynik", "Wynik dla 4 2 5 * + 1 3 2 * + /", ""]
+        ]},
+        { "typ": "tekst", "id": "z3_kolejnosc", "wiersze": 3,
+          "pytanie": "Dlaczego przy odejmowaniu i dzieleniu kolejność zdejmowania ze stosu ma znaczenie, a przy dodawaniu i mnożeniu nie? Podaj wyrażenie, na którym błąd byłby niewidoczny." }
+      ]
+    },
+    {
+      "nr": 4,
+      "tytul": "Stacja rozrządowa",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Uzupełnij funkcję <code>na_onp</code>. Wszystkie sześć testów zamiany ma przechodzić, łącznie z łącznością potęgowania.",
+      "pola": [
+        { "typ": "tekst", "id": "z4_kod", "wiersze": 14, "pytanie": "Wklej treść funkcji na_onp." },
+        { "typ": "zrzut", "id": "z4_zrzut", "opis": "wynik uruchomienia szkieletu — komplet testów" },
+        { "typ": "tekst", "id": "z4_lacznosc", "wiersze": 4,
+          "pytanie": "Który warunek w pętli odpowiada za łączność i co dokładnie trzeba w nim zmienić, żeby potęgowanie zachowywało się inaczej niż odejmowanie?" },
+        { "typ": "tekst", "id": "z4_zlozonosc", "wiersze": 3,
+          "pytanie": "Uzasadnij, dlaczego oba algorytmy mają złożoność liniową. Odwołaj się do tego, ile razy pojedynczy symbol trafia na stos i z niego schodzi." }
+      ]
+    },
+    {
+      "nr": 5,
+      "tytul": "Stos jako struktura danych",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Pytania o samą strukturę, nie o konkretne wyrażenie.",
+      "pola": [
+        { "typ": "tekst", "id": "z5_operacje", "wiersze": 3,
+          "pytanie": "Wymień cztery podstawowe operacje na stosie i podaj, jak realizuje się każdą z nich na liście w Pythonie." },
+        { "typ": "tekst", "id": "z5_pop0", "wiersze": 3,
+          "pytanie": "Dlaczego pop(0) psuje złożoność, skoro pop() jest operacją stałego czasu? Jakiej struktury użyjesz, gdy naprawdę potrzebujesz kolejki?" },
+        { "typ": "tekst", "id": "z5_zastosowania", "wiersze": 3,
+          "pytanie": "Podaj dwa zastosowania stosu poza obliczaniem wyrażeń i wyjaśnij, na czym polega w nich zasada LIFO." }
+      ]
+    },
+    {
+      "nr": 6,
+      "tytul": "Do wyboru — na ocenę wyższą",
+      "poziom": "wymagania dopełniające i wykraczające · oceny 5–6",
+      "polecenie": "Wykonaj jedno z trzech zadań opisanych w sekcji „Na ocenę celującą” na stronie materiału.",
+      "pola": [
+        { "typ": "wybor", "id": "z6_wybor", "pytanie": "Wybieram zadanie",
+          "opcje": ["A — kalkulator z kontrolą błędów", "B — notacja prefiksowa", "C — drzewo wyrażenia"] },
+        { "typ": "tekst", "id": "z6_odp", "wiersze": 12, "pytanie": "Rozwiązanie wraz z wnioskami" }
+      ]
+    }
+  ]
+}
