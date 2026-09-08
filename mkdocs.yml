@@ -57,6 +57,14 @@ theme:
 extra_css:
   - assets/extra.css
 
+extra_javascript:
+  # docx.umd.js celowo NIE jest tu wymieniony — karta.js doczyta go dopiero
+  # przy generowaniu pliku, żeby nie obciążać czytelników materiału.
+  - assets/js/karta.js
+  - assets/js/quiz.js
+  - assets/js/postep.js
+  - assets/js/narzedzia.js
+
 markdown_extensions:
   - abbr
   - admonition

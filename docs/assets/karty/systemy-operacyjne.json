@@ -1,0 +1,90 @@
+{
+  "id": "systemy-operacyjne",
+  "tytul": "Systemy operacyjne w środowisku sieciowym",
+  "przedmiot": "PCEiKZ Szczucin · informatyka, zakres rozszerzony",
+  "klasa": "1TT",
+  "sufiks": "SO",
+  "zadania": [
+    {
+      "nr": 1,
+      "tytul": "System plików twojego dysku",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Sprawdź, w jakim systemie plików sformatowany jest dysk, na którym pracujesz — przez <strong>Właściwości</strong> dysku w Eksploratorze albo poleceniem <code>fsutil fsinfo volumeinfo C:</code>",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z1_dysk", "Litera dysku", "np. C:"],
+          ["z1_fs", "System plików", "np. NTFS, exFAT, FAT32"],
+          ["z1_pojemnosc", "Pojemność całkowita", ""],
+          ["z1_wolne", "Wolne miejsce", ""]
+        ]},
+        { "typ": "zrzut", "id": "z1_zrzut", "opis": "okno Właściwości dysku albo wynik polecenia" },
+        { "typ": "tekst", "id": "z1_odp", "wiersze": 4,
+          "pytanie": "Kolega nie może skopiować pliku 6 GB na pendrive'a, na którym jest 50 GB wolnego miejsca. Wyjaśnij, co się dzieje, i doradź mu rozwiązanie." }
+      ]
+    },
+    {
+      "nr": 2,
+      "tytul": "Fragmentacja a typ nośnika",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Uruchom <strong>Defragmentuj i optymalizuj dyski</strong>, odczytaj typ nośnika i kliknij <strong>Analizuj</strong>. Możesz też użyć polecenia <code>defrag C: /A</code> jako administrator — przełącznik <code>/A</code> tylko analizuje.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z2_typ", "Typ nośnika", "dysk twardy (HDD) czy SSD"],
+          ["z2_frag", "Poziom fragmentacji", "w procentach"],
+          ["z2_data", "Ostatnia optymalizacja", ""]
+        ]},
+        { "typ": "zrzut", "id": "z2_zrzut", "opis": "okno Optymalizuj dyski z kolumną Typ nośnika i wynikiem analizy" },
+        { "typ": "tekst", "id": "z2_wniosek", "wiersze": 3,
+          "pytanie": "Uzupełnij wniosek. Uzasadnienie ma odwoływać się do budowy nośnika, nie do samego procentu.",
+          "podpowiedz": "Dysk C: jest typu … , poziom fragmentacji wynosi … %, defragmentacja jest / nie jest zalecana, ponieważ …" }
+      ]
+    },
+    {
+      "nr": 3,
+      "tytul": "Polecenia trybu tekstowego",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Otwórz wiersz poleceń (<code>Win + R</code>, wpisz <code>cmd</code>) i wykonaj <code>systeminfo</code> oraz <code>ipconfig /all</code>. Odszukaj w wynikach poniższe informacje.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z3_system", "Nazwa i wersja systemu", ""],
+          ["z3_model", "Producent i model komputera", ""],
+          ["z3_ram", "Pamięć fizyczna (łącznie)", ""],
+          ["z3_boot", "Czas uruchomienia systemu", "System Boot Time"],
+          ["z3_ip", "Adres IPv4", ""],
+          ["z3_maska", "Maska podsieci", ""],
+          ["z3_brama", "Brama domyślna", ""]
+        ]},
+        { "typ": "tekst", "id": "z3_odp", "wiersze": 4,
+          "pytanie": "Wysyłasz koledze zrzut ekranu z wynikiem ipconfig. Co o sobie zdradzasz? Czy widoczny tam adres IPv4 pozwala komuś z internetu połączyć się z twoim komputerem? Uzasadnij." }
+      ]
+    },
+    {
+      "nr": 4,
+      "tytul": "Konta użytkowników i hasła",
+      "poziom": "wymagania konieczne i podstawowe · oceny 2–3",
+      "polecenie": "Otwórz <strong>Ustawienia → Konta</strong> i sprawdź, na jakim koncie pracujesz.",
+      "pola": [
+        { "typ": "wybor", "id": "z4_konto", "pytanie": "Typ mojego konta",
+          "opcje": ["administrator", "standardowe", "nie potrafię ustalić"] },
+        { "typ": "tekst", "id": "z4_hasla", "wiersze": 4,
+          "pytanie": "Porównaj hasła P@ssw0rd! oraz poziomka-wiatrak-27-beczka. Które jest mocniejsze i dlaczego? Nie odpowiadaj „bo dłuższe” — wyjaśnij mechanizm." },
+        { "typ": "tekst", "id": "z4_zasady", "wiersze": 3,
+          "pytanie": "Wymień trzy zasady tworzenia i używania haseł, które poznałeś na tej lekcji.",
+          "podpowiedz": "1.  2.  3." },
+        { "typ": "tekst", "id": "z4_2fa", "wiersze": 3,
+          "pytanie": "Czy na koncie, z którego korzystasz najczęściej, masz włączone uwierzytelnianie dwuskładnikowe? Jeśli tak — jaką metodą. Jeśli nie — opisz, gdzie się je włącza." }
+      ]
+    },
+    {
+      "nr": 5,
+      "tytul": "Do wyboru — na ocenę wyższą",
+      "poziom": "wymagania dopełniające i wykraczające · oceny 5–6",
+      "polecenie": "Wykonaj jedno zadanie z trzech.<br><strong>A.</strong> Zaprojektuj kopię zapasową swoich danych według zasady 3-2-1: co kopiujesz, na jakie nośniki, jak często i która kopia jest poza domem.<br><strong>B.</strong> Wyjaśnij, dlaczego błąd w sterowniku wywraca cały system, a błąd w przeglądarce zamyka tylko ją. Odwołaj się do trybu jądra i trybu użytkownika.<br><strong>C.</strong> Zmierz czas rozruchu komputera i wskaż trzy programy najbardziej opóźniające start (Menedżer zadań → Uruchamianie). Podaj konkretne liczby.",
+      "pola": [
+        { "typ": "wybor", "id": "z5_wybor", "pytanie": "Wybieram zadanie",
+          "opcje": ["A — kopia zapasowa 3-2-1", "B — tryb jądra a tryb użytkownika", "C — czas rozruchu"] },
+        { "typ": "tekst", "id": "z5_odp", "wiersze": 8, "pytanie": "Rozwiązanie" }
+      ]
+    }
+  ]
+}

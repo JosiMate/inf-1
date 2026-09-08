@@ -274,6 +274,11 @@ Nawet skradzione hasło nie wystarczy wtedy do zalogowania.
     Pierwsze znajduje się na każdej liście popularnych haseł i padnie w ułamku
     sekundy. Drugie jest dłuższe, nieprzewidywalne i łatwiejsze do zapamiętania.
 
+Sprawdź to sam. Wpisz oba hasła w poniższe narzędzie i zobacz, jak zmienia się
+liczba bitów entropii oraz lista zastrzeżeń.
+
+<div class="narzedzie" data-narzedzie="hasla"></div>
+
 ---
 
 ## 7. Konto w środowisku aplikacji Google
@@ -491,13 +496,31 @@ fsutil fsinfo volumeinfo C:
 ## Praca do oddania
 
 Z tego tematu oddajesz **kartę pracy** — wypełniasz ją na komputerze, nie
-w zeszycie.
-
-[:material-file-word: Pobierz kartę pracy (.docx)](../pliki/karta-pracy-systemy-operacyjne.docx){ .md-button .md-button--primary download }
-
-Karta zbiera to, co robiłeś przy komputerze w ćwiczeniach 1 i 2, plus pytania
+w zeszycie. Karta zbiera to, co robiłeś w ćwiczeniach 1 i 2, plus pytania
 o polecenia tekstowe, konta i hasła. Na końcu jest jedno zadanie do wyboru na
 ocenę wyższą.
+
+Masz dwie drogi. **Wypełnij kartę tutaj, na stronie** — odpowiedzi zapisują się
+w twojej przeglądarce, więc możesz przerwać i wrócić na drugiej lekcji, a na
+końcu jednym przyciskiem pobierasz gotowy plik Worda z właściwą nazwą. Albo
+pobierz pustą kartę i wypełnij ją w Wordzie.
+
+!!! info "Twoje odpowiedzi zostają na twoim komputerze"
+
+    Formularz niczego nie wysyła — ani do mnie, ani nigdzie indziej. Wszystko
+    dzieje się w przeglądarce, a plik Worda powstaje dopiero w momencie
+    kliknięcia przycisku. Jedyny moment, w którym praca do mnie trafia, to
+    dołączenie pliku w Dzienniku VULCAN.
+
+    Odwrotna strona tej samej monety: skoro odpowiedzi siedzą w przeglądarce,
+    to **wyczyszczenie danych przeglądania je usunie** i na cudzym komputerze
+    ich nie znajdziesz. Kiedy skończysz — pobierz plik.
+
+<div class="karta-pracy" data-karta="systemy-operacyjne"></div>
+
+### Jeśli wolisz wypełnić w Wordzie
+
+[:material-file-word: Pobierz pustą kartę pracy (.docx)](../pliki/karta-pracy-systemy-operacyjne.docx){ .md-button download }
 
 ### Jak ją wypełnić
 
@@ -525,60 +548,114 @@ opisz słowami — wtedy zamiast obrazka podaj odczytane wartości.
 
 ---
 
-## Zadania sprawdzające
+## Sprawdź się
 
-To pytania do samodzielnego sprawdzenia się przed sprawdzianem — **nie oddajesz
-ich**, odpowiedzi masz od razu pod spodem. Pracę do oddania opisano wyżej.
+Krótki test z natychmiastową odpowiedzią. **Nie jest oceniany i nic nie wysyła** —
+liczy się w twojej przeglądarce i służy tylko do tego, żebyś wiedział, którą
+sekcję warto przeczytać jeszcze raz.
 
-??? question "1. Wymień pięć zadań systemu operacyjnego."
+<div class="quiz" markdown="0">
+<script type="application/json">
+[
+ {
+  "pytanie": "W jakim trybie pracuje sterownik urządzenia w większości systemów operacyjnych?",
+  "opcje": [
+   "W trybie użytkownika — dla bezpieczeństwa",
+   "W trybie jądra",
+   "Naprzemiennie, zależnie od obciążenia",
+   "To zależy wyłącznie od producenta sprzętu"
+  ],
+  "poprawna": 1,
+  "wyjasnienie": "Sterownik musi sięgać bezpośrednio do rejestrów urządzenia i obsługiwać przerwania, a z trybu użytkownika się tego nie da. Dlatego jego błąd wywraca cały system."
+ },
+ {
+  "pytanie": "Pendrive sformatowany w FAT32, wolne 50 GB. Kopiujesz plik 6 GB. Co się stanie?",
+  "opcje": [
+   "Skopiuje się bez problemu — miejsca wystarczy",
+   "System odmówi: FAT32 nie obsługuje plików większych niż 4 GB",
+   "Plik podzieli się automatycznie na części",
+   "Skopiuje się, ale będzie uszkodzony"
+  ],
+  "poprawna": 1,
+  "wyjasnienie": "Ograniczeniem jest system plików, nie ilość miejsca. Rozwiązanie: sformatować nośnik w exFAT — pamiętając, że formatowanie kasuje dane."
+ },
+ {
+  "pytanie": "Czy warto ręcznie defragmentować dysk SSD?",
+  "opcje": [
+   "Tak, raz w miesiącu",
+   "Tak, gdy fragmentacja przekroczy 10%",
+   "Nie — nie ma ruchomej głowicy, a zapisy skracają żywotność komórek",
+   "Nie, bo Windows i tak na to nie pozwala"
+  ],
+  "poprawna": 2,
+  "wyjasnienie": "Rozproszenie pliku nie spowalnia SSD, a defragmentacja to ogromna liczba zapisów. Windows dla SSD wykonuje zamiast tego TRIM."
+ },
+ {
+  "pytanie": "Jakim przełącznikiem polecenia defrag sprawdzisz fragmentację, nie zmieniając niczego na dysku?",
+  "odpowiedz": [
+   "/A",
+   "A",
+   "-A",
+   "defrag /A"
+  ],
+  "wyjasnienie": "Przełącznik /A oznacza analizę. Polecenie wymaga uprawnień administratora."
+ },
+ {
+  "pytanie": "Jak nazywa się operacja, którą Windows wykonuje dla dysków SSD zamiast defragmentacji?",
+  "odpowiedz": [
+   "TRIM"
+  ],
+  "wyjasnienie": "TRIM informuje dysk, które bloki są już nieużywane i można je wyczyścić z wyprzedzeniem."
+ },
+ {
+  "pytanie": "Które hasło jest trudniejsze do złamania?",
+  "opcje": [
+   "P@ssw0rd!",
+   "poziomka-wiatrak-27-beczka",
+   "Oba są podobnie mocne",
+   "To zależy wyłącznie od serwisu"
+  ],
+  "poprawna": 1,
+  "wyjasnienie": "Pierwsze jest na każdej liście popularnych haseł i padnie w ułamku sekundy mimo znaków specjalnych. Drugie jest znacznie dłuższe i nieprzewidywalne."
+ },
+ {
+  "pytanie": "Dlaczego wymuszanie zmiany hasła co 30 dni pogarsza bezpieczeństwo?",
+  "opcje": [
+   "Bo użytkownicy zapominają nowych haseł",
+   "Bo zmieniają je przewidywalnie: Haslo1, Haslo2, Haslo3",
+   "Bo serwery nie nadążają z przetwarzaniem",
+   "To nieprawda — poprawia bezpieczeństwo"
+  ],
+  "poprawna": 1,
+  "wyjasnienie": "Dlatego aktualne zalecenia mówią, by zmieniać hasło tylko przy podejrzeniu wycieku, a stawiać na długość i menedżer haseł."
+ }
+]
+</script>
+</div>
+
+### Pytania otwarte
+
+Tych automat nie sprawdzi. Odpowiedz sobie na głos albo na brudno, a potem
+rozwiń odpowiedź i porównaj.
+
+??? question "Wymień pięć zadań systemu operacyjnego."
 
     Zarządzanie procesami, zarządzanie pamięcią, zarządzanie urządzeniami
     (sterowniki), zarządzanie plikami, udostępnianie interfejsu użytkownika.
 
-??? question "2. W jakim trybie pracuje sterownik urządzenia i jaka jest tego konsekwencja?"
-
-    W większości systemów operacyjnych — w **trybie jądra**, ponieważ musi mieć
-    bezpośredni dostęp do sprzętu i obsługiwać przerwania. Konsekwencja: błąd
-    w sterowniku powoduje awarię całego systemu, a nie pojedynczego programu.
-
-??? question "3. Kolega nie może skopiować pliku 6 GB na pendrive'a, na którym jest 50 GB wolnego miejsca. Co się dzieje i co doradzisz?"
-
-    Pendrive jest sformatowany w **FAT32**, który nie obsługuje plików większych
-    niż 4 GB. Rozwiązanie: przenieść dane z pendrive'a, sformatować go w **exFAT**
-    i skopiować plik ponownie. Alternatywnie — podzielić plik archiwizatorem na
-    mniejsze części.
-
-??? question "4. Czy warto defragmentować dysk SSD? Uzasadnij."
-
-    Nie. W SSD nie ma ruchomej głowicy, więc fragmentacja nie wpływa na czas
-    dostępu, a defragmentacja generuje ogromną liczbę zapisów i skraca żywotność
-    komórek pamięci. Windows dla SSD wykonuje zamiast tego **TRIM**.
-
-??? question "5. Dlaczego wymuszanie zmiany hasła co 30 dni pogarsza bezpieczeństwo?"
-
-    Bo użytkownicy zmieniają hasła przewidywalnie — dopisując kolejną cyfrę albo
-    znak. Powstają hasła słabsze i częściej zapisywane w widocznym miejscu.
-    Aktualne zalecenia mówią, by zmieniać hasło tylko przy podejrzeniu wycieku,
-    a stawiać na długość i menedżer haseł.
-
-??? question "6. Wyjaśnij zasadę 3-2-1 i powiedz, czego brakuje w kopii trzymanej na drugim dysku w tym samym komputerze."
+??? question "Wyjaśnij zasadę 3-2-1 i powiedz, czego brakuje w kopii trzymanej na drugim dysku w tym samym komputerze."
 
     Trzy kopie danych, na dwóch różnych nośnikach, jedna poza budynkiem. Kopia na
     drugim dysku w tej samej obudowie spełnia warunek dwóch nośników, ale nie
     chroni przed kradzieżą, pożarem, zalaniem ani przepięciem — brakuje kopii
     poza lokalizacją.
 
-??? question "7. Komputer uruchamia się w trybie awaryjnym, ale normalnie pokazuje niebieski ekran. O czym to świadczy i od czego zaczniesz?"
+??? question "Komputer uruchamia się w trybie awaryjnym, ale normalnie pokazuje niebieski ekran. O czym to świadczy i od czego zaczniesz?"
 
     Problem leży w czymś, co ładuje się przy normalnym starcie, a w trybie
     awaryjnym nie: najczęściej w sterowniku lub programie autostartu. Zaczynam od
     przypomnienia sobie, co ostatnio instalowałem, i odinstalowuję to w trybie
     awaryjnym; sprawdzam też datę ostatniej aktualizacji sterowników.
-
-??? question "8. Jakim poleceniem sprawdzisz poziom fragmentacji dysku C:, nie zmieniając niczego?"
-
-    `defrag C: /A` — przełącznik `/A` oznacza wyłącznie analizę. Polecenie
-    wymaga uprawnień administratora.
 
 ---
 

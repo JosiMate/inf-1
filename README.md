@@ -14,12 +14,66 @@ z odpowiedziami. Zbudowana na MkDocs Material, publikowana na GitHub Pages.
 ├── requirements.txt     # zależności Pythona (wersja przypięta — patrz niżej)
 └── docs/
     ├── index.md                        # spis wszystkich 38 tematów
-    ├── dzial-1/
-    │   └── systemy-operacyjne.md       # gotowy materiał (temat 2, 2 godz.)
+    ├── dzial-1/                        # materiały działu I
+    ├── pliki/                          # karty pracy i wymagania do pobrania
     └── assets/
         ├── extra.css                   # korekty stylu + reguły wydruku
-        └── favicon.png
+        ├── karty/<id>.json             # definicje interaktywnych kart pracy
+        └── js/
+            ├── karta.js                # formularz karty → plik .docx
+            ├── quiz.js                 # testy z natychmiastową odpowiedzią
+            ├── postep.js               # odhaczanie tematów, paski postępu
+            ├── narzedzia.js            # widgety: siła hasła, konwerter systemów
+            └── docx.umd.js             # biblioteka składająca .docx (1,1 MB)
 ```
+
+## Elementy interaktywne
+
+Wszystko działa po stronie przeglądarki — strona pozostaje statyczna, nie ma
+serwera i żadne odpowiedzi uczniów nigdzie nie wychodzą. Stan trzymany jest
+w `localStorage`, czyli przetrwa zamknięcie karty, ale zniknie po wyczyszczeniu
+danych przeglądania i nie przeniesie się na inny komputer.
+
+**Karta pracy jako formularz.** W materiale wstawiasz jedną linijkę:
+
+```html
+<div class="karta-pracy" data-karta="systemy-operacyjne"></div>
+```
+
+Zadania opisujesz w `docs/assets/karty/systemy-operacyjne.json`. Dostępne typy
+pól: `tabela` (wiersze etykieta → wartość), `tekst` (pole wielowierszowe),
+`wybor` (jedna opcja z listy) i `zrzut` (wklejenie obrazu przez Ctrl + V,
+przeciągnięcie pliku albo wybór z dysku). Uczeń klika przycisk i dostaje plik
+`.docx` nazwany według wzoru `<klasa>_<nr w dzienniku>_<sufiks>.docx`.
+
+Biblioteka `docx.umd.js` **nie jest ładowana na starcie** — `karta.js` doczytuje
+ją dopiero przy pierwszym kliknięciu przycisku, żeby czytelnicy materiału nie
+pobierali megabajta bez potrzeby. Trzymamy ją w repozytorium zamiast na CDN,
+bo szkolna sieć potrafi blokować zewnętrzne serwery.
+
+**Quiz.** Dane w znaczniku `script`, dzięki czemu nie potrzeba wtyczek do
+budowania:
+
+```html
+<div class="quiz" markdown="0">
+<script type="application/json">
+[ { "pytanie": "…", "opcje": ["a","b"], "poprawna": 1, "wyjasnienie": "…" },
+  { "pytanie": "…", "odpowiedz": ["TRIM"], "wyjasnienie": "…" } ]
+</script>
+</div>
+```
+
+Pytanie z `opcje` jest zamknięte, pytanie z `odpowiedz` sprawdza wpisany tekst
+po uproszczeniu — bez ogonków, wielkości liter i znaków interpunkcyjnych, więc
+„ trim ” i „TRIM” są traktowane tak samo.
+
+**Pasek postępu** włącza się sam na stronie głównej: `postep.js` dokłada kolumnę
+z checkboxem do każdej tabeli działowej i liczy procent przerobionych tematów.
+
+**Narzędzia** wstawiasz przez `<div class="narzedzie" data-narzedzie="hasla">`.
+Dostępne: `hasla` (entropia i typowe słabości hasła — użyte w temacie 2) oraz
+`konwerter` (systemy dwójkowy, ósemkowy, dziesiętny i szesnastkowy na żywo,
+gotowy pod dział VI).
 
 Strona główna wypisuje wszystkie tematy z rozkładu 1TT i oznacza, które mają już
 materiały. Dodając nowy temat, pamiętaj o zmianie jego statusu w tej tabeli.
@@ -33,14 +87,14 @@ cd informatyka-1tt
 git init -b main
 git add .
 git commit -m "Materialy informatyka 1TT"
-gh repo create informatyka-1tt --public --source=. --push
+gh repo create inf-1 --public --source=. --push
 ```
 
 Bez narzędzia `gh` załóż repozytorium przez stronę GitHuba, a zamiast ostatniej
 linii wykonaj:
 
 ```powershell
-git remote add origin https://github.com/JoziMate/informatyka-1tt.git
+git remote add origin https://github.com/JosiMate/inf-1.git
 git push -u origin main
 ```
 
@@ -64,7 +118,7 @@ Zakładka **Actions** pokaże workflow *Publikacja strony*. Po jego zakończeniu
 strona jest pod adresem:
 
 ```
-https://JoziMate.github.io/informatyka-1tt/
+https://josimate.github.io/inf-1/
 ```
 
 Jeśli nazwiesz repozytorium inaczej, popraw `site_url`, `repo_url` i `repo_name`
@@ -146,7 +200,7 @@ int main() { return 0; }
 ## Własna domena
 
 W **Settings → Pages → Custom domain** wpisz adres, a u operatora domeny dodaj
-rekord `CNAME` wskazujący na `jozimate.github.io`. GitHub sam wystawi certyfikat
+rekord `CNAME` wskazujący na `josimate.github.io`. GitHub sam wystawi certyfikat
 HTTPS — zaznacz **Enforce HTTPS**, gdy stanie się dostępne. Po podpięciu domeny
 zaktualizuj `site_url` w `mkdocs.yml`.
 
