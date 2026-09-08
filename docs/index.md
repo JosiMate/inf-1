@@ -29,7 +29,7 @@ jeszcze pusta. Tematy zapisane *kursywą* to sprawdziany działowe.
 
 | Temat | Godz. | Materiały |
 | --- | :---: | --- |
-| Lekcja organizacyjna. Zapoznanie z wymaganiami edukacyjnymi oraz bhp w sali komputerowej | 1 | *w przygotowaniu* |
+| **[Lekcja organizacyjna. Zapoznanie z wymaganiami edukacyjnymi oraz bhp w sali komputerowej](dzial-1/lekcja-organizacyjna.md)** | 1 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | **[Systemy operacyjne w środowisku sieciowym](dzial-1/systemy-operacyjne.md)** | 2 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | Nowe technologie i oprogramowanie | 1 | *w przygotowaniu* |
 | Sieci komputerowe – budowa i usługi | 2 | *w przygotowaniu* |

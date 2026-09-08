@@ -100,6 +100,7 @@ plugins:
 nav:
   - Start: index.md
   - Dział I. Urządzenia komputerowe w sieci:
+      - Lekcja organizacyjna i wymagania: dzial-1/lekcja-organizacyjna.md
       - Systemy operacyjne w środowisku sieciowym: dzial-1/systemy-operacyjne.md
 
 extra:
