@@ -270,3 +270,29 @@
 @media print {
   .kp-stopka, .kp-zrzut-pusty, .qz-sprawdz, .qz-reset, .pg-pasek, .nz { display: none !important; }
 }
+
+/* ── Kafelki wyboru rocznika na stronie startowej ────────────────────────
+   Material daje siatkę .grid.cards; tu wyrównujemy wysokość kart w wierszu,
+   dosuwamy przyciski do dołu i wygaszamy roczniki jeszcze nierealizowane —
+   rozpoznajemy je po braku przycisku w karcie.                            */
+.md-typeset .grid.wybor-rocznika {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+}
+.wybor-rocznika.grid.cards > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+.wybor-rocznika.grid.cards > ul > li > hr ~ p:first-of-type { flex: 1 0 auto; }
+.wybor-rocznika.grid.cards > ul > li > p:last-child { margin-bottom: 0; }
+.wybor-rocznika .md-button {
+  margin: .4rem .4rem 0 0;
+  padding: .35em .9em;
+  font-size: .72rem;
+}
+.wybor-rocznika.grid.cards > ul > li:not(:has(.md-button)) {
+  opacity: .62;
+  border-style: dashed;
+}
+.wybor-rocznika.grid.cards > ul > li:not(:has(.md-button)) .twemoji {
+  filter: grayscale(1);
+}

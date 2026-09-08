@@ -1,15 +1,15 @@
-site_name: Informatyka 1TT
-site_description: Materiały do lekcji informatyki w zakresie rozszerzonym — klasa 1TT, technikum
+site_name: Informatyka TT
+site_description: Materiały do lekcji informatyki w zakresie rozszerzonym — technikum, PCEiKZ Szczucin
 site_author: PCEiKZ Szczucin
 
 # Adres docelowy strony. Przy GitHub Pages dla repozytorium projektowego
 # ma postać https://<użytkownik>.github.io/<nazwa-repo>/ — zmień, jeśli
 # nazwiesz repozytorium inaczej albo podepniesz własną domenę.
-site_url: https://josimate.github.io/inf-1/
+site_url: https://josimate.github.io/inf-tt/
 
 # Włącza w nagłówku odnośnik do repozytorium i przycisk "Edytuj tę stronę".
-repo_url: https://github.com/JosiMate/inf-1
-repo_name: JosiMate/inf-1
+repo_url: https://github.com/JosiMate/inf-tt
+repo_name: JosiMate/inf-tt
 edit_uri: edit/main/docs/
 copyright: PCEiKZ Szczucin — materiały do użytku edukacyjnego
 
@@ -107,9 +107,13 @@ plugins:
 
 nav:
   - Start: index.md
-  - Dział I. Urządzenia komputerowe w sieci:
-      - Lekcja organizacyjna i wymagania: dzial-1/lekcja-organizacyjna.md
-      - Systemy operacyjne w środowisku sieciowym: dzial-1/systemy-operacyjne.md
+  - Klasa 1:
+      - Spis tematów: klasa-1/index.md
+      - Wymagania edukacyjne i bhp: klasa-1/wymagania-i-bhp.md
+      - Systemy operacyjne w środowisku sieciowym: klasa-1/systemy-operacyjne.md
+  - Klasa 3:
+      - Spis tematów: klasa-3/index.md
+      - Wymagania edukacyjne i bhp: klasa-3/wymagania-i-bhp.md
 
 extra:
   social:

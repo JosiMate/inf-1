@@ -1,113 +1,74 @@
 ---
 hide:
   - navigation
+  - toc
 ---
 
-# Materiały — informatyka 1TT
+# Informatyka — zakres rozszerzony
 
-**Zakres rozszerzony · technikum · 3 godziny tygodniowo**
+**Technikum · 3 godziny tygodniowo · PCEiKZ Szczucin**
 
-Materiały do lekcji: teoria, ćwiczenia przy komputerze i zadania sprawdzające
-z odpowiedziami. Strona przydaje się w trzech sytuacjach — gdy chcesz wrócić do
-czegoś z lekcji, gdy nadrabiasz nieobecność i gdy przygotowujesz się do
-sprawdzianu działowego.
+Wybierz swój rocznik. Znajdziesz tam spis tematów, materiały do lekcji
+i wymagania na poszczególne oceny. Strona obsługuje wszystkie oddziały
+realizujące informatykę w zakresie rozszerzonym.
 
-!!! info "Co gdzie jest"
+<div class="grid cards wybor-rocznika" markdown>
 
-    Na tej stronie są **treści do nauki** oraz **karty pracy do pobrania**.
-    Oceny, terminy i odsyłanie wykonanych prac — to wszystko w **Dzienniku
-    VULCAN**, który pozostaje kanałem obowiązującym.
+-   :material-numeric-1-circle:{ .lg .middle } __Klasa 1__
 
-Materiały pojawiają się w miarę realizacji programu, więc część tematów jest
-jeszcze pusta. Tematy zapisane *kursywą* to sprawdziany działowe.
+    ---
 
-## Spis tematów
+    Sieci i urządzenia, edytor tekstu, strony WWW i grafika, arkusz kalkulacyjny, wstęp do programowania w Pythonie.
 
-<div class="spis-tematow" markdown>
+    38 tematów · 90 godzin · gotowe 2 materiały
 
-### Dział I. Urządzenia komputerowe w sieci
+    [:material-format-list-bulleted: Tematy](klasa-1/index.md){ .md-button .md-button--primary }
+    [:material-clipboard-check: Wymagania](klasa-1/wymagania-i-bhp.md){ .md-button }
 
-*12 godzin*
+-   :material-numeric-2-circle:{ .lg .middle } __Klasa 2__
 
-| Temat | Godz. | Materiały |
-| --- | :---: | --- |
-| **[Lekcja organizacyjna. Zapoznanie z wymaganiami edukacyjnymi oraz bhp w sali komputerowej](dzial-1/lekcja-organizacyjna.md)** | 1 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
-| **[Systemy operacyjne w środowisku sieciowym](dzial-1/systemy-operacyjne.md)** | 2 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
-| Nowe technologie i oprogramowanie | 1 | *w przygotowaniu* |
-| Sieci komputerowe – budowa i usługi | 2 | *w przygotowaniu* |
-| Protokoły IPv4 i IPv6 | 2 | *w przygotowaniu* |
-| E-usługi | 2 | *w przygotowaniu* |
-| Korzystanie z e-zasobów i współpraca zdalna | 1 | *w przygotowaniu* |
-| *Wiesz, umiesz, zdasz – podsumowanie działu* | 1 | — |
+    ---
 
-### Dział II. Edytor tekstu i prezentacje
+    Algorytmy na liczbach i tekstach, struktury danych, metody algorytmiczne.
 
-*10 godzin*
+    *Materiały pojawią się w kolejnych latach cyklu.*
 
-| Temat | Godz. | Materiały |
-| --- | :---: | --- |
-| Rozbudowane dokumenty tekstowe | 3 | *w przygotowaniu* |
-| Sztuka prezentacji | 2 | *w przygotowaniu* |
-| *Wiesz, umiesz, zdasz – podsumowanie działu* | 1 | — |
-| Nowoczesne technologie w służbie człowiekowi – projekt zespołowy | 4 | *w przygotowaniu* |
+-   :material-numeric-3-circle:{ .lg .middle } __Klasa 3__
 
-### Dział III. Społeczeństwo w internecie
+    ---
 
-*7 godzin*
+    Dynamiczne struktury danych, algorytmy numeryczne, kryptografia, relacyjne bazy danych i SQL.
 
-| Temat | Godz. | Materiały |
-| --- | :---: | --- |
-| Moja cyfrowa tożsamość | 1 | *w przygotowaniu* |
-| Przemiany społeczne a technologie | 1 | *w przygotowaniu* |
-| Cyberbezpieczeństwo | 2 | *w przygotowaniu* |
-| Podstawy kryptografii | 2 | *w przygotowaniu* |
-| *Wiesz, umiesz, zdasz – podsumowanie działu* | 1 | — |
+    25 tematów · 90 godzin · gotowe 1 materiał
 
-### Dział IV. Strony WWW i grafika komputerowa
+    [:material-format-list-bulleted: Tematy](klasa-3/index.md){ .md-button .md-button--primary }
+    [:material-clipboard-check: Wymagania](klasa-3/wymagania-i-bhp.md){ .md-button }
 
-*16 godzin*
+-   :material-numeric-4-circle:{ .lg .middle } __Klasa 4__
 
-| Temat | Godz. | Materiały |
-| --- | :---: | --- |
-| Tworzenie stron internetowych | 3 | *w przygotowaniu* |
-| Grafika 2D i 3D | 4 | *w przygotowaniu* |
-| Animacja komputerowa | 4 | *w przygotowaniu* |
-| *Wiesz, umiesz, zdasz – podsumowanie działu* | 1 | — |
-| Responsywna strona WWW w systemie CMS – projekt zespołowy | 4 | *w przygotowaniu* |
+    ---
 
-### Dział V. Arkusz kalkulacyjny i bazy danych
+    Zaawansowane zagadnienia programistyczne i projekty zespołowe.
 
-*21 godzin*
+    *Materiały pojawią się w kolejnych latach cyklu.*
 
-| Temat | Godz. | Materiały |
-| --- | :---: | --- |
-| Jak pobierać dane do arkusza kalkulacyjnego | 2 | *w przygotowaniu* |
-| Wyciągamy wiedzę z danych | 4 | *w przygotowaniu* |
-| Zaawansowane formuły | 5 | *w przygotowaniu* |
-| Konsekwencje zaokrąglania liczb | 1 | *w przygotowaniu* |
-| Korespondencja seryjna | 2 | *w przygotowaniu* |
-| *Wiesz, umiesz, zdasz – podsumowanie działu* | 4 | — |
-| Współdziałanie aplikacji – projekt zespołowy | 3 | *w przygotowaniu* |
+-   :material-numeric-5-circle:{ .lg .middle } __Klasa 5__
 
-### Dział VI. Algorytmika i programowanie w języku Python
+    ---
 
-*24 godziny*
+    Powtórzenie całego cyklu i przygotowanie do matury rozszerzonej.
 
-| Temat | Godz. | Materiały |
-| --- | :---: | --- |
-| Od problemu do programu | 3 | *w przygotowaniu* |
-| Systemy liczbowe i reprezentacja danych w komputerze | 3 | *w przygotowaniu* |
-| Algorytmy zamiany reprezentacji liczb między systemami liczbowymi | 3 | *w przygotowaniu* |
-| Czy to jest palindrom? | 2 | *w przygotowaniu* |
-| Czy ta liczba jest pierwsza? | 3 | *w przygotowaniu* |
-| Działania na liczbach w systemach innych niż dziesiętny | 3 | *w przygotowaniu* |
-| Algorytm Euklidesa i działania na ułamkach | 3 | *w przygotowaniu* |
-| Szyfr Cezara i inne szyfry podstawieniowe | 3 | *w przygotowaniu* |
-| *Wiesz, umiesz, zdasz – podsumowanie działu* | 1 | — |
+    *Materiały pojawią się w kolejnych latach cyklu.*
 
 </div>
 
+!!! info "Co gdzie jest"
+
+    Na tej stronie są **treści do nauki** oraz **materiały do pobrania**.
+    Oceny, terminy i odsyłanie wykonanych prac — to wszystko w **Dzienniku
+    VULCAN**, który pozostaje kanałem obowiązującym.
+
 ---
 
-*Łącznie 90 godzin w roku szkolnym. Podręcznik: „Informatyka na czasie" —
-zakres rozszerzony, część 1 i 2 (Nowa Era).*
+*Podręcznik: „Informatyka na czasie" — zakres rozszerzony (Nowa Era).
+Językiem programowania w całym cyklu jest Python.*

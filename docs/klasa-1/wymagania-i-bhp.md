@@ -1,13 +1,15 @@
-# Lekcja organizacyjna
+# Lekcja organizacyjna — klasa 1
 
 !!! abstract "O tym temacie"
 
-    **1 godzina lekcyjna** · Dział I. Urządzenia komputerowe w sieci
+    **1 godzina lekcyjna** · Dział I. Urządzenia komputerowe w sieci · oddział **1TT**
 
     Pierwsza lekcja w roku. Ustalamy dwie rzeczy: jak bezpiecznie pracować
     w pracowni i według czego będziesz oceniany przez cały rok. Do tej strony
     wracaj przed każdym sprawdzianem działowym — tu jest wypisane, co trzeba
     umieć na każdą ocenę.
+
+[:material-format-list-bulleted: Spis tematów](index.md){ .md-button }
 
 ## Bezpieczeństwo i higiena pracy w pracowni
 
@@ -97,23 +99,23 @@ co jest wpisane przy trójce — nawet jeśli zrobiło się coś trudniejszego.
 - uczeń, który z przyczyn zdrowotnych nie może pracować przy komputerze, wykonuje
   zadania w formie zastępczej ustalonej z nauczycielem
 
+
 ## Wymagania na poszczególne oceny
 
-Rozwiń dział, żeby zobaczyć, co trzeba umieć na każdą ocenę. Wracaj tu przed
-sprawdzianem działowym — to jest lista, według której powstają zadania.
+Rozwiń dział, żeby zobaczyć, co trzeba umieć na każdą ocenę.
 
 ??? abstract "Dział I. Urządzenia komputerowe w sieci — 12 godz."
 
-    | Temat | Godz. |
-    | --- | :---: |
-    | Lekcja organizacyjna. Zapoznanie z wymaganiami edukacyjnymi oraz bhp w sali komputerowej | 1 |
-    | Systemy operacyjne w środowisku sieciowym | 2 |
-    | Nowe technologie i oprogramowanie | 1 |
-    | Sieci komputerowe – budowa i usługi | 2 |
-    | Protokoły IPv4 i IPv6 | 2 |
-    | E-usługi | 2 |
-    | Korzystanie z e-zasobów i współpraca zdalna | 1 |
-    | Wiesz, umiesz, zdasz – podsumowanie działu | 1 |
+    | Temat | Godz. | Zapisy podstawy programowej |
+    | --- | :---: | --- |
+    | Lekcja organizacyjna | 1 | — |
+    | Systemy operacyjne w środowisku sieciowym | 2 | III.3, V.3 |
+    | Nowe technologie i oprogramowanie | 1 | III.1, III.2 |
+    | Sieci komputerowe – budowa i usługi | 2 | III.1, III.4 |
+    | Protokoły IPv4 i IPv6 | 2 | R III.2 |
+    | E-usługi | 2 | IV.2 |
+    | Korzystanie z e-zasobów i współpraca zdalna | 1 | IV.5, V.1, V.2 |
+    | Wiesz, umiesz, zdasz – podsumowanie działu | 1 | III.1–III.4, IV.2, IV.5, V.1–V.3, R III.2 |
 
     ---
 
@@ -178,12 +180,12 @@ sprawdzianem działowym — to jest lista, według której powstają zadania.
 
 ??? abstract "Dział II. Edytor tekstu i prezentacje — 10 godz."
 
-    | Temat | Godz. |
-    | --- | :---: |
-    | Rozbudowane dokumenty tekstowe | 3 |
-    | Sztuka prezentacji | 2 |
-    | Wiesz, umiesz, zdasz – podsumowanie działu | 1 |
-    | Nowoczesne technologie w służbie człowiekowi – projekt zespołowy | 4 |
+    | Temat | Godz. | Zapisy podstawy programowej |
+    | --- | :---: | --- |
+    | Rozbudowane dokumenty tekstowe | 3 | II.3b |
+    | Sztuka prezentacji | 2 | II.3e |
+    | Wiesz, umiesz, zdasz – podsumowanie działu | 1 | II.3b, II.3e |
+    | Nowoczesne technologie w służbie człowiekowi – projekt zespołowy | 4 | II.3a, II.3b, II.3e, III.1, III.2, III.4, R III.2, IV.1–IV.3, IV.5 |
 
     ---
 
@@ -230,13 +232,13 @@ sprawdzianem działowym — to jest lista, według której powstają zadania.
 
 ??? abstract "Dział III. Społeczeństwo w internecie — 7 godz."
 
-    | Temat | Godz. |
-    | --- | :---: |
-    | Moja cyfrowa tożsamość | 1 |
-    | Przemiany społeczne a technologie | 1 |
-    | Cyberbezpieczeństwo | 2 |
-    | Podstawy kryptografii | 2 |
-    | Wiesz, umiesz, zdasz – podsumowanie działu | 1 |
+    | Temat | Godz. | Zapisy podstawy programowej |
+    | --- | :---: | --- |
+    | Moja cyfrowa tożsamość | 1 | IV.4, V.1, V.2, V.4 |
+    | Przemiany społeczne a technologie | 1 | V.1, V.2, V.4 |
+    | Cyberbezpieczeństwo | 2 | III.1, III.2, III.3, V.1, V.3, V.4 |
+    | Podstawy kryptografii | 2 | R V.1, R V.2 |
+    | Wiesz, umiesz, zdasz – podsumowanie działu | 1 | III.1–III.3, IV.4, V.1–V.4, R V.1, R V.2 |
 
     ---
 
@@ -287,13 +289,13 @@ sprawdzianem działowym — to jest lista, według której powstają zadania.
 
 ??? abstract "Dział IV. Strony WWW i grafika komputerowa — 16 godz."
 
-    | Temat | Godz. |
-    | --- | :---: |
-    | Tworzenie stron internetowych | 3 |
-    | Grafika 2D i 3D | 4 |
-    | Animacja komputerowa | 4 |
-    | Wiesz, umiesz, zdasz – podsumowanie działu | 1 |
-    | Responsywna strona WWW w systemie CMS – projekt zespołowy | 4 |
+    | Temat | Godz. | Zapisy podstawy programowej |
+    | --- | :---: | --- |
+    | Tworzenie stron internetowych | 3 | II.3a, II.3f |
+    | Grafika 2D i 3D | 4 | II.3a, II.3f |
+    | Animacja komputerowa | 4 | R II.3a |
+    | Wiesz, umiesz, zdasz – podsumowanie działu | 1 | II.3a, II.3f, R II.3a |
+    | Responsywna strona WWW w systemie CMS – projekt zespołowy | 4 | II.3f, II.4, III.2 |
 
     ---
 
@@ -343,15 +345,15 @@ sprawdzianem działowym — to jest lista, według której powstają zadania.
 
 ??? abstract "Dział V. Arkusz kalkulacyjny i bazy danych — 21 godz."
 
-    | Temat | Godz. |
-    | --- | :---: |
-    | Jak pobierać dane do arkusza kalkulacyjnego | 2 |
-    | Wyciągamy wiedzę z danych | 4 |
-    | Zaawansowane formuły | 5 |
-    | Konsekwencje zaokrąglania liczb | 1 |
-    | Korespondencja seryjna | 2 |
-    | Wiesz, umiesz, zdasz – podsumowanie działu | 4 |
-    | Współdziałanie aplikacji – projekt zespołowy | 3 |
+    | Temat | Godz. | Zapisy podstawy programowej |
+    | --- | :---: | --- |
+    | Jak pobierać dane do arkusza kalkulacyjnego | 2 | II.3c, II.4 |
+    | Wyciągamy wiedzę z danych | 4 | II.3c, II.4 |
+    | Zaawansowane formuły | 5 | R II.3b |
+    | Konsekwencje zaokrąglania liczb | 1 | R I.9 |
+    | Korespondencja seryjna | 2 | II.2, II.3b, II.3c, II.3d |
+    | Wiesz, umiesz, zdasz – podsumowanie działu | 4 | II.2, II.3b–II.3d, R I.7, R II.4c |
+    | Współdziałanie aplikacji – projekt zespołowy | 3 | II.3b, II.3c, II.3d, II.4, IV.5 |
 
     ---
 
@@ -402,17 +404,17 @@ sprawdzianem działowym — to jest lista, według której powstają zadania.
 
 ??? abstract "Dział VI. Algorytmika i programowanie w języku Python — 24 godz."
 
-    | Temat | Godz. |
-    | --- | :---: |
-    | Od problemu do programu | 3 |
-    | Systemy liczbowe i reprezentacja danych w komputerze | 3 |
-    | Algorytmy zamiany reprezentacji liczb między systemami liczbowymi | 3 |
-    | Czy to jest palindrom? | 2 |
-    | Czy ta liczba jest pierwsza? | 3 |
-    | Działania na liczbach w systemach innych niż dziesiętny | 3 |
-    | Algorytm Euklidesa i działania na ułamkach | 3 |
-    | Szyfr Cezara i inne szyfry podstawieniowe | 3 |
-    | Wiesz, umiesz, zdasz – podsumowanie działu | 1 |
+    | Temat | Godz. | Zapisy podstawy programowej |
+    | --- | :---: | --- |
+    | Od problemu do programu | 3 | I.1–I.3, R I.3, II.1, R II.2, R I i II.1 |
+    | Systemy liczbowe i reprezentacja danych w komputerze | 3 | I.1, I.3, R I.7, R I.8, II.1, R II.2 |
+    | Algorytmy zamiany reprezentacji liczb między systemami liczbowymi | 3 | I.1, I.2, I.2a, I.3, R I.5, R I.6, II.1, R II.2 |
+    | Czy to jest palindrom? | 2 | I.1, I.2b, I.3, R I.1, II.1, R II.2 |
+    | Czy ta liczba jest pierwsza? | 3 | I.1, I.2, I.2a, I.3, R I.2, R I.3, R I.5, II.1, R II.2 |
+    | Działania na liczbach w systemach innych niż dziesiętny | 3 | I.1–I.3, R I.3, R I.6, R I.8, II.1, R II.2 |
+    | Algorytm Euklidesa i działania na ułamkach | 3 | I.1, I.2, I.2a, I.3, R I.2, R I.3, R I.5, R I.6, R I.10, II.1, R II.2 |
+    | Szyfr Cezara i inne szyfry podstawieniowe | 3 | I.1, I.2b, I.3, R I.3, II.1, R II.2 |
+    | Wiesz, umiesz, zdasz – podsumowanie działu | 1 | I.1–I.3, R I.2, R I.3, R I.5, R I.7, II.1, R I i II.1 |
 
     ---
 
@@ -484,6 +486,6 @@ Pełne wymagania w jednym dokumencie — do wydruku albo przekazania rodzicom.
 
 ---
 
-*Podstawa: rozkład materiału dla klasy 1TT oraz plan wynikowy do cyklu
-„Informatyka na czasie" (Nowa Era, edycja 2024), zgodnie z podstawą programową
-kształcenia ogólnego z informatyki dla technikum w zakresie rozszerzonym.*
+*Podstawa: rozkład materiału nauczania informatyki w zakresie rozszerzonym dla
+oddziału 1TT oraz plan wynikowy do podręcznika „Informatyka na czasie"
+(Nowa Era). Łącznie 90 godzin w roku szkolnym. Językiem programowania jest Python.*
