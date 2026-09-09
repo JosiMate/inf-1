@@ -10,6 +10,18 @@
     algorytmu. Cały problem — obliczanie wyrażeń z nawiasami i priorytetami —
     rozwiązuje się jednym przebiegiem, jeśli tylko ma się **stos**.
 
+!!! success "Cele lekcji"
+
+    Po tej lekcji potrafisz:
+
+    1. zapisać wyrażenie w odwrotnej notacji polskiej i wyjaśnić, dlaczego nie potrzebuje ono nawiasów
+    2. obliczyć wartość wyrażenia w ONP, prowadząc tabelę stanu stosu
+    3. wymienić operacje na stosie i zrealizować je na liście w Pythonie
+    4. zaimplementować kalkulator ONP i wyjaśnić, dlaczego przy odejmowaniu i dzieleniu kolejność zdejmowania ze stosu ma znaczenie
+    5. zaimplementować algorytm stacji rozrządowej zamieniający zapis tradycyjny na ONP
+    6. uwzględnić w algorytmie priorytet i łączność operatorów, w tym prawostronną łączność potęgowania
+    7. uzasadnić liniową złożoność obu algorytmów, odwołując się do liczby operacji na stosie
+
 ## 1. Skąd wziął się problem
 
 Zapis `2 + 3 * 4` jest dla człowieka oczywisty, dla programu — nie. Żeby go
