@@ -163,7 +163,7 @@
       s.skad.set(klucz(p.r, p.c), biezaca);
       s.pojemnik.push(p);
     });
-    const ILU = ["", "jednego nowego sąsiada", "dwóch nowych sąsiadów", "trzech nowych sąsiadów"];
+    const ILU = ["", "jednego nowego sąsiada", "dwóch nowych sąsiadów", "trzech nowych sąsiadów", "czterech nowych sąsiadów"];
     s.opis = nowe.length
       ? `Zdejmujemy pole z początku kolejki i dokładamy na koniec ${ILU[nowe.length]}.`
       : "Zdejmujemy pole z początku kolejki — nowych sąsiadów brak, kolejka się skraca.";
