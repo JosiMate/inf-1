@@ -27,7 +27,7 @@ wspólnego z ocenami.
 | Temat | Godz. | Materiały |
 | --- | :---: | --- |
 | **[Odwrotna notacja polska (ONP)](onp.md)** | 4 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
-| Znajdowanie drogi wyjścia z labiryntu | 4 | *w przygotowaniu* |
+| **[Znajdowanie drogi wyjścia z labiryntu](labirynt.md)** | 4 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | Wykorzystanie list w rozwiązywaniu problemów | 4 | *w przygotowaniu* |
 | Grafy. Znajdowanie najkrótszej drogi | 6 | *w przygotowaniu* |
 | *Wiesz, umiesz, zdasz* | 4 | — |

@@ -39,7 +39,7 @@ realizujące informatykę w zakresie rozszerzonym.
 
     Dynamiczne struktury danych, algorytmy numeryczne, kryptografia, relacyjne bazy danych i SQL.
 
-    25 tematów · 90 godzin · gotowe 2 materiały
+    25 tematów · 90 godzin · gotowe 3 materiały
 
     [:material-format-list-bulleted: Tematy](klasa-3/index.md){ .md-button .md-button--primary }
     [:material-clipboard-check: Wymagania](klasa-3/wymagania-i-bhp.md){ .md-button }

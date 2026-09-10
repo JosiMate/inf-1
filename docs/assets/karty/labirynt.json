@@ -1,0 +1,212 @@
+{
+  "id": "labirynt",
+  "tytul": "Znajdowanie drogi wyjścia z labiryntu",
+  "przedmiot": "PCEiKZ Szczucin · informatyka, zakres rozszerzony · klasa 3",
+  "klasa": "3TT",
+  "sufiks": "LABIRYNT",
+  "zadania": [
+    {
+      "nr": 1,
+      "tytul": "Nawroty na kartce",
+      "poziom": "wymagania konieczne i podstawowe · oceny 2–3",
+      "polecenie": "Weź labirynt z sekcji 1 materiału i prześledź przeszukiwanie z nawrotami przy kolejności kierunków <b>dół → prawo → góra → lewo</b>. Prowadź tabelkę stanu stosu jak w sekcji 2.",
+      "pola": [
+        {
+          "typ": "tabela",
+          "wiersze": [
+            ["z1_droga", "znaleziona droga (ciąg pól)", ""],
+            ["z1_dlugosc", "liczba pól drogi", ""],
+            ["z1_nawroty", "liczba nawrotów", ""],
+            ["z1_odwiedzone", "liczba odwiedzonych pól", ""]
+          ]
+        },
+        {
+          "typ": "tekst",
+          "id": "z1_bfs",
+          "wiersze": 4,
+          "pytanie": "Czy zmiana kolejności kierunków zmienia długość drogi znalezionej przez BFS? Odpowiedz i uzasadnij — bez uruchamiania programu."
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "tytul": "Stos, kolejka i to, co w nich leży",
+      "poziom": "wymagania konieczne i podstawowe · oceny 2–3",
+      "polecenie": "Pytania o same struktury danych — to z nich bierze się różnica między oboma algorytmami.",
+      "pola": [
+        {
+          "typ": "tabela",
+          "wiersze": [
+            ["z2_stos_zasada", "stos działa według zasady…", ""],
+            ["z2_kolejka_zasada", "kolejka działa według zasady…", ""],
+            ["z2_stos_python", "operacje stosu w Pythonie (dołożenie / zdjęcie)", ""],
+            ["z2_kolejka_python", "operacje kolejki w Pythonie (dołożenie / zdjęcie)", ""]
+          ]
+        },
+        {
+          "typ": "tekst",
+          "id": "z2_zawartosc",
+          "wiersze": 4,
+          "pytanie": "Co dokładnie zawiera stos w wersji z nawrotami, a co kolejka w wersji wszerz? Dlaczego tylko w jednym z tych algorytmów potrzebna jest mapa „skąd”?"
+        },
+        {
+          "typ": "tekst",
+          "id": "z2_deque",
+          "wiersze": 3,
+          "pytanie": "Dlaczego kolejki nie buduje się na zwykłej liście z pop(0)? Podaj złożoność obu wariantów."
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "tytul": "Przeszukiwanie z nawrotami w Pythonie",
+      "poziom": "wymagania podstawowe i rozszerzające · oceny 3–4",
+      "polecenie": "Uzupełnij w szkielecie funkcje <code>sasiedzi</code>, <code>szukaj_rekurencyjnie</code> i <code>licz_nawroty</code>, a potem uruchom testy.",
+      "pola": [
+        {
+          "typ": "tekst",
+          "id": "z3_kod",
+          "wiersze": 14,
+          "pytanie": "Wklej treść funkcji szukaj_rekurencyjnie (razem z funkcją wewnętrzną idz)"
+        },
+        {
+          "typ": "zrzut",
+          "id": "z3_zrzut",
+          "opis": "wynik uruchomienia testów dla zadań 1 i 2"
+        },
+        {
+          "typ": "tekst",
+          "id": "z3_nawrot",
+          "wiersze": 3,
+          "pytanie": "Wskaż w swoim kodzie linijkę odpowiadającą za nawrót i wyjaśnij, kiedy program do niej dochodzi."
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "tytul": "Najkrótsza droga z kolejką",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Uzupełnij <code>najkrotsza_droga</code> i <code>odtworz</code>. Uruchom <code>porownaj()</code> i przepisz tabelkę.",
+      "pola": [
+        {
+          "typ": "tekst",
+          "id": "z4_kod",
+          "wiersze": 14,
+          "pytanie": "Wklej treść funkcji najkrotsza_droga"
+        },
+        {
+          "typ": "tabela",
+          "wiersze": [
+            ["z4_maly", "MALY — nawroty / wszerz", ""],
+            ["z4_plaszcz", "PLASZCZ — nawroty / wszerz", ""],
+            ["z4_jedna", "JEDNA_DROGA — nawroty / wszerz", ""],
+            ["z4_bez", "BEZ_WYJSCIA — nawroty / wszerz", ""]
+          ]
+        },
+        {
+          "typ": "tekst",
+          "id": "z4_rowne",
+          "wiersze": 4,
+          "pytanie": "Dla jednego labiryntu obie metody dają drogę tej samej długości. Który to labirynt i co takiego ma w sobie, że wynik nawrotów nie może tam być gorszy od najkrótszego?"
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "tytul": "Uzasadnienie i złożoność",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Odpowiedzi własnymi słowami — te pytania wracają na sprawdzianie i na maturze.",
+      "pola": [
+        {
+          "typ": "tekst",
+          "id": "z5_dlaczego",
+          "wiersze": 5,
+          "pytanie": "Uzasadnij, dlaczego algorytm z kolejką znajduje drogę najkrótszą. Odwołaj się do kolejności, w jakiej pola opuszczają kolejkę."
+        },
+        {
+          "typ": "wybor",
+          "id": "z5_warunek",
+          "pytanie": "BFS daje najkrótszą drogę pod warunkiem, że…",
+          "opcje": [
+            "labirynt nie ma cykli",
+            "wszystkie przejścia kosztują tyle samo",
+            "start leży w rogu labiryntu",
+            "kolejka jest zbudowana na deque"
+          ]
+        },
+        {
+          "typ": "tabela",
+          "wiersze": [
+            ["z5_czas", "złożoność czasowa obu algorytmów dla n pól", ""],
+            ["z5_pamiec_dfs", "co zajmuje pamięć przy nawrotach", ""],
+            ["z5_pamiec_bfs", "co zajmuje pamięć przy przeszukiwaniu wszerz", ""]
+          ]
+        },
+        {
+          "typ": "tekst",
+          "id": "z5_wybor",
+          "wiersze": 4,
+          "pytanie": "Masz labirynt 1000 × 1000 i pytanie „czy w ogóle da się wyjść”. Który algorytm wybierasz i dlaczego? A gdyby pytanie brzmiało „ile najmniej ruchów”?"
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "tytul": "Wersja iteracyjna",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Przepisz nawroty bez rekurencji (<code>szukaj_iteracyjnie</code>) i sprawdź obie wersje na labiryncie <code>WAZ</code>.",
+      "pola": [
+        {
+          "typ": "tekst",
+          "id": "z6_kod",
+          "wiersze": 14,
+          "pytanie": "Wklej treść funkcji szukaj_iteracyjnie"
+        },
+        {
+          "typ": "tabela",
+          "wiersze": [
+            ["z6_wolne", "liczba wolnych pól labiryntu WAZ", ""],
+            ["z6_limit", "limit zagnieżdżeń zgłoszony przez program", ""],
+            ["z6_rekurencja", "co się stało z wersją rekurencyjną", ""],
+            ["z6_iteracja", "długość drogi z wersji iteracyjnej", ""]
+          ]
+        },
+        {
+          "typ": "tekst",
+          "id": "z6_wniosek",
+          "wiersze": 3,
+          "pytanie": "Dlaczego podniesienie limitu rekurencji nie jest dobrym rozwiązaniem tego problemu?"
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "tytul": "Do wyboru — na ocenę wyższą",
+      "poziom": "wymagania dopełniające i wykraczające · oceny 5–6",
+      "polecenie": "Wykonaj jedno z trzech zadań opisanych w sekcji „Na ocenę celującą” na stronie materiału.",
+      "pola": [
+        {
+          "typ": "wybor",
+          "id": "z7_wybor",
+          "pytanie": "Wybieram zadanie",
+          "opcje": [
+            "A — labirynt z ważonymi przejściami",
+            "B — wszystkie drogi bez powtórzeń",
+            "C — generator labiryntów"
+          ]
+        },
+        {
+          "typ": "tekst",
+          "id": "z7_odp",
+          "wiersze": 14,
+          "pytanie": "Rozwiązanie wraz z wnioskami"
+        },
+        {
+          "typ": "zrzut",
+          "id": "z7_zrzut",
+          "opis": "wynik działania programu"
+        }
+      ]
+    }
+  ]
+}

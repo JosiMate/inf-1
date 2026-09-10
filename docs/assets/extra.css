@@ -296,3 +296,77 @@
 .wybor-rocznika.grid.cards > ul > li:not(:has(.md-button)) .twemoji {
   filter: grayscale(1);
 }
+
+/* ------------------------------------------------- wizualizator labiryntu */
+/* Widget z docs/assets/js/labirynt.js. Kolory pól biorą się ze zmiennych
+   motywu, więc siatka wygląda poprawnie w trybie jasnym i ciemnym; tylko
+   ściana i droga mają własne wartości, bo muszą być czytelne w obu. */
+.lb { margin: 1.4em 0; }
+
+.lb-sterowanie { display: flex; flex-wrap: wrap; gap: .8em 1.2em;
+                 align-items: center; margin-bottom: .9em; }
+.lb-tryby { display: flex; border-radius: .25rem; overflow: hidden;
+            border: 1px solid var(--md-default-fg-color--lighter); }
+.lb-tryb { padding: .35em .9em; font: inherit; font-size: .72rem; cursor: pointer;
+           border: 0; background: var(--md-default-bg-color);
+           color: var(--md-default-fg-color--light); }
+.lb-tryb + .lb-tryb { border-left: 1px solid var(--md-default-fg-color--lighter); }
+.lb-tryb.lb-wybrany { background: var(--md-accent-fg-color);
+                      color: var(--md-primary-bg-color); font-weight: 700; }
+.lb-przyciski { display: flex; gap: .5em; }
+.lb-przyciski button { padding: .35em .9em; font: inherit; font-size: .72rem;
+                       cursor: pointer; border-radius: .2rem;
+                       border: 1px solid var(--md-default-fg-color--lighter);
+                       background: var(--md-default-bg-color);
+                       color: var(--md-default-fg-color); }
+.lb-przyciski button:disabled { opacity: .45; cursor: default; }
+
+/* Wysokość siatki wynika z kwadratowych pól (aspect-ratio na .lb-pole),
+   więc kontener jej nie narzuca — inaczej przy szerokich labiryntach
+   pola robiłyby się prostokątne. */
+.lb-siatka { display: grid; grid-template-columns: repeat(var(--lb-kolumny), 1fr);
+             gap: 1px; max-width: 30rem;
+             background: var(--md-default-fg-color--lightest); padding: 1px;
+             border-radius: .2rem; }
+/* Korytarz dostaje ton panelu, a nie tło strony — bez tego siatka wygląda
+   jak dziury wycięte w kartce i przestaje się czytać jako labirynt. */
+.lb-pole { aspect-ratio: 1; background: var(--md-code-bg-color);
+           border-radius: 1px; transition: background-color .12s linear; }
+.lb-sciana { background: var(--md-default-fg-color--light); }
+.lb-odwiedzone { background: color-mix(in srgb, var(--md-accent-fg-color) 22%, var(--md-default-bg-color)); }
+.lb-czeka      { background: color-mix(in srgb, var(--md-accent-fg-color) 55%, var(--md-default-bg-color)); }
+.lb-droga      { background: #2e7d32; }
+.lb-biezaca    { background: #f9a825; }
+.lb-start      { box-shadow: inset 0 0 0 2px #1565c0; }
+.lb-wyjscie    { box-shadow: inset 0 0 0 2px #c62828; }
+
+.lb-opis { margin: .9em 0 .5em; font-size: .78rem; min-height: 2.6em; }
+.lb-liczniki { display: flex; flex-wrap: wrap; gap: .4em 1.2em; font-size: .72rem;
+               color: var(--md-default-fg-color--light); }
+.lb-liczniki b { color: var(--md-default-fg-color); }
+
+.lb-pojemnik { margin: .8em 0 .6em; font-size: .7rem; }
+.lb-etykieta { display: block; font-weight: 700; margin-bottom: .25em; }
+.lb-zawartosc { display: block; padding: .45em .6em; border-radius: .2rem;
+                font-family: var(--md-code-font-family, monospace);
+                background: var(--md-code-bg-color); overflow-x: auto;
+                white-space: nowrap; }
+
+.lb-legenda { display: flex; flex-wrap: wrap; align-items: center; gap: .3em .9em;
+              margin: .9em 0 0; font-size: .68rem;
+              color: var(--md-default-fg-color--light); }
+.lb-poz { display: inline-flex; align-items: center; gap: .3em; white-space: nowrap; }
+.lb-kl { display: inline-block; width: .8em; height: .8em; border-radius: .15rem;
+         flex: none;
+         background: var(--md-code-bg-color);
+         border: 1px solid var(--md-default-fg-color--lighter); }
+.lb-kl-sciana  { background: var(--md-default-fg-color--light);
+                 border-color: var(--md-default-fg-color--light); }
+.lb-kl-start   { box-shadow: inset 0 0 0 2px #1565c0; }
+.lb-kl-wyjscie { box-shadow: inset 0 0 0 2px #c62828; }
+.lb-kl-odw   { background: color-mix(in srgb, var(--md-accent-fg-color) 22%, var(--md-default-bg-color)); }
+.lb-kl-czeka { background: color-mix(in srgb, var(--md-accent-fg-color) 55%, var(--md-default-bg-color)); }
+.lb-kl-biez  { background: #f9a825; }
+.lb-kl-droga { background: #2e7d32; }
+
+.lb-blad { color: #c62828; font-weight: 700; }

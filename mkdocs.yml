@@ -67,6 +67,7 @@ extra_javascript:
   - assets/js/quiz.js
   - assets/js/postep.js
   - assets/js/narzedzia.js
+  - assets/js/labirynt.js
 
 markdown_extensions:
   - abbr
@@ -118,6 +119,7 @@ nav:
       - Spis tematów: klasa-3/index.md
       - Wymagania edukacyjne i bhp: klasa-3/wymagania-i-bhp.md
       - Odwrotna notacja polska: klasa-3/onp.md
+      - Znajdowanie drogi wyjścia z labiryntu: klasa-3/labirynt.md
 
 extra:
   social:
