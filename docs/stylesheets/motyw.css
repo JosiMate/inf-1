@@ -1,0 +1,78 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Motyw kolorystyczny serwisu inf-tt — wyprowadzony z ikony serwisu.
+
+   Ikona (docs/assets/favicon.png) to znak zachęty powłoki „>_" na tle #7c3aed:
+   fiolet. Wcześniej ikona była turkusowa, dokładnie w tym samym odcieniu co
+   ikona serwisu ASSO (175° i 173°) — a klasa 3TT korzysta z obu serwisów naraz
+   i nie dało się ich odróżnić. Turkus został przy ASSO, tutaj wszedł fiolet.
+
+   Ten plik dopasowuje kolory akcentu i przechylenie neutralnych szarości do
+   ikony; jest wczytywany jako trzeci, po stylesheets/extra.css, i dotyczy
+   wyłącznie tego serwisu.
+
+   Kontrast policzony na wartościach, które CSS naprawdę wylicza w przeglądarce
+   (a nie na tle „mniej więcej takim jak slate"). Próg AA dla tekstu to 4,5:1;
+   tło motywu ciemnego wychodzi tu #221e29:
+       #7c3aed na białym        → 5,70:1  ✔ motyw jasny
+       #7c3aed na tle slate     → 2,87:1  ✘ za mało, stąd jaśniejszy wariant
+       #a78bfa na tle slate     → 6,00:1  ✔ motyw ciemny
+       tekst #1a1622 na #a78bfa → 6,53:1  ✔ napis na przycisku podstawowym
+       biel na #a78bfa          → 2,72:1  ✘ dlatego napis jest ciemny
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────── motyw ciemny (slate) ─────────────────────────── */
+/* Selektory celowo dwuczłonowe. Material ustawia --md-typeset-a-color regułą
+   [data-md-color-scheme=slate][data-md-color-primary=indigo], która ma wyższą
+   swoistość niż sam [data-md-color-scheme=slate] — bez dopisania drugiego
+   atrybutu odnośniki i aktywna pozycja nawigacji zostawały indygo. */
+[data-md-color-scheme="slate"][data-md-color-primary] {
+  /* Material buduje wszystkie szarości slate z jednego odcienia. Domyślne 232
+     to chłodny błękitny grafit; 260 przesuwa je ledwie zauważalnie w fiolet,
+     przez co akcent przestaje wyglądać jak wtręt z innego zestawu. Wartość
+     dobrana nisko — przy większej całe tło robi się śliwkowe. */
+  --md-hue: 260;
+
+  /* Odnośniki i akcenty: jaśniejszy brat koloru ikony — ten sam odcień (262°),
+     wyżej postawiona jasność. To gotowy violet-400; osobny odcień dobierany
+     ręcznie okazał się niepotrzebny, bo ten wyrabia 6,00:1. */
+  --md-typeset-a-color: #a78bfa;
+  --md-primary-fg-color: #a78bfa;
+  --md-primary-fg-color--light: #c4b5fd;
+  --md-primary-fg-color--dark: #7c3aed;
+  --md-accent-fg-color: #c4b5fd;
+
+  /* Napis na przycisku podstawowym musi być ciemny — biel na tym fiolecie
+     daje 2,72:1, czyli poniżej każdego progu. */
+  --md-primary-bg-color: #1a1622;
+  --md-primary-bg-color--light: #1a1622;
+}
+
+/* ─────────────────────────── motyw jasny (default) ─────────────────────────── */
+[data-md-color-scheme="default"][data-md-color-primary] {
+  /* Tu wchodzi dokładnie kolor ikony — na bieli ma 5,70:1. */
+  --md-typeset-a-color: #7c3aed;
+  --md-primary-fg-color: #7c3aed;
+  --md-primary-fg-color--light: #9061f9;
+  --md-primary-fg-color--dark: #5b21b6;
+  --md-accent-fg-color: #5b21b6;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffff;
+}
+
+/* Pasek wyboru tekstu — drobiazg, ale przy zaznaczaniu widać go na każdej
+   stronie i w domyślnym indygo wyglądałby obco. */
+::selection {
+  background-color: color-mix(in srgb, var(--md-typeset-a-color) 28%, transparent);
+}
+
+/* Kafelki wyboru rocznika: cienka fioletowa obwódka zamiast neutralnej, żeby
+   strona startowa od razu niosła kolor serwisu. Roczniki bez materiałów
+   zostają szare — za ich wygaszenie odpowiada reguła w assets/extra.css. */
+.wybor-rocznika.grid.cards > ul > li:has(.md-button) {
+  border-color: color-mix(in srgb, var(--md-typeset-a-color) 35%, var(--ui-linia));
+}
+
+/* Numer rocznika na kafelku — w kolorze serwisu. */
+.wybor-rocznika.grid.cards > ul > li:has(.md-button) .twemoji {
+  color: var(--md-typeset-a-color);
+}
