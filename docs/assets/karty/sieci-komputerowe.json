@@ -1,0 +1,130 @@
+{
+  "id": "inf-tt-sieci-komputerowe",
+  "tytul": "Sieci komputerowe – budowa i usługi",
+  "przedmiot": "PCEiKZ Szczucin · informatyka, zakres rozszerzony",
+  "klasa": "1TT",
+  "sufiks": "SIECI",
+  "zadania": [
+    {
+      "nr": 1,
+      "tytul": "Inwentaryzacja stanowiska",
+      "poziom": "wymagania podstawowe · ocena 3",
+      "polecenie": "Ćwiczenie 1. Wykonaj <code>ipconfig /all</code> w wierszu polecenia i odczytaj konfigurację swojej karty sieciowej.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z1_ip", "Adres IPv4", ""],
+          ["z1_maska", "Maska podsieci", ""],
+          ["z1_brama", "Brama domyślna", ""],
+          ["z1_dns", "Serwery DNS", ""],
+          ["z1_mac", "Adres fizyczny (MAC)", ""],
+          ["z1_dhcp", "Serwer DHCP", ""],
+          ["z1_rodzaj", "Adres jest prywatny / publiczny / APIPA", "przy prywatnym podaj pulę"]
+        ]},
+        { "typ": "zrzut", "id": "z1_zrzut", "opis": "wynik polecenia ipconfig /all" },
+        { "typ": "tekst", "id": "z1_siec", "wiersze": 3,
+          "pytanie": "Na podstawie adresu i maski podaj adres sieci, adres rozgłoszeniowy oraz liczbę adresów dostępnych dla urządzeń. Pokaż obliczenie.",
+          "podpowiedz": "adres sieci … , adres rozgłoszeniowy … , liczba hostów … , bo maska … zostawia … bitów na część hosta" }
+      ]
+    },
+    {
+      "nr": 2,
+      "tytul": "Gdzie urywa się połączenie",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Ćwiczenie 2. Wykonaj testy po kolei, od siebie na zewnątrz, i zapisz wyniki.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z2_loopback", "ping 127.0.0.1 — wynik", "odpowiada / nie odpowiada"],
+          ["z2_brama", "ping do bramy — średni czas", "w ms"],
+          ["z2_ip", "ping 1.1.1.1 — średni czas i utrata pakietów", ""],
+          ["z2_nazwa", "ping pceikz.pl — wynik", ""],
+          ["z2_tracert", "tracert pceikz.pl — liczba przeskoków", ""],
+          ["z2_nslookup", "nslookup pceikz.pl — zwrócony adres i serwer DNS", ""]
+        ]},
+        { "typ": "zrzut", "id": "z2_zrzut", "opis": "wynik polecenia tracert" },
+        { "typ": "tekst", "id": "z2_gwiazdki", "wiersze": 3,
+          "pytanie": "W trasie pojawiły się węzły odpowiadające gwiazdkami. Wyjaśnij, co to znaczy i kiedy gwiazdki rzeczywiście oznaczają awarię." },
+        { "typ": "tekst", "id": "z2_diagnoza", "wiersze": 4,
+          "pytanie": "Kolega ma adres 169.254.8.3 i nie ma internetu. Opisz kolejność czynności diagnostycznych i wyjaśnij, co wykluczasz na każdym kroku." }
+      ]
+    },
+    {
+      "nr": 3,
+      "tytul": "Test prędkości i jego interpretacja",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Ćwiczenie 3. Wykonaj test prędkości łącza i odczytaj cztery wartości.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z3_down", "Pobieranie (Mb/s)", ""],
+          ["z3_up", "Wysyłanie (Mb/s)", ""],
+          ["z3_ping", "Opóźnienie / ping (ms)", ""],
+          ["z3_jitter", "Jitter (ms)", ""],
+          ["z3_mb", "Pobieranie przeliczone na MB/s", "pokaż działanie"],
+          ["z3_serwer", "Serwer testowy i pora pomiaru", ""]
+        ]},
+        { "typ": "zrzut", "id": "z3_zrzut", "opis": "wynik testu prędkości" },
+        { "typ": "tekst", "id": "z3_wniosek", "wiersze": 4,
+          "pytanie": "Do gry sieciowej ważniejsza jest przepustowość czy opóźnienie? Uzasadnij, porównując łącze 200 Mb/s z pingiem 120 ms i łącze 50 Mb/s z pingiem 15 ms." }
+      ]
+    },
+    {
+      "nr": 4,
+      "tytul": "Urządzenia, usługi i porty",
+      "poziom": "wymagania podstawowe i rozszerzające · oceny 3–4",
+      "polecenie": "Odpowiedzi własnymi słowami — przepisana definicja nie liczy się jako odpowiedź.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z4_https", "Protokół i port szyfrowanych stron WWW", ""],
+          ["z4_dns", "Protokół i port zamiany nazw na adresy", ""],
+          ["z4_smb", "Protokół i port udostępniania plików w sieci lokalnej Windows", ""],
+          ["z4_ssh", "Protokół i port szyfrowanego zdalnego terminala", ""]
+        ]},
+        { "typ": "tekst", "id": "z4_switch", "wiersze": 3,
+          "pytanie": "Wyjaśnij różnicę między przełącznikiem a routerem: na jakich adresach pracuje każde z tych urządzeń i co z tego wynika." },
+        { "typ": "tekst", "id": "z4_klodka", "wiersze": 3,
+          "pytanie": "Strona ma kłódkę w pasku adresu, a mimo to może być oszustwem. Wyjaśnij, co dokładnie gwarantuje kłódka, a czego nie." }
+      ]
+    },
+    {
+      "nr": 5,
+      "tytul": "Sieć bezprzewodowa — konfiguracja i bezpieczeństwo",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Na podstawie sekcji 5. Jeśli masz dostęp do panelu routera domowego, odwołaj się do jego rzeczywistych ustawień.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z5_pasmo", "Pasmo twojej sieci domowej", "2,4 / 5 / 6 GHz"],
+          ["z5_standard", "Standard Wi-Fi (nazwa handlowa i oznaczenie)", "np. Wi-Fi 6 / 802.11ax"],
+          ["z5_zabezpieczenie", "Rodzaj zabezpieczenia", "WPA2 / WPA3 / inne"]
+        ]},
+        { "typ": "tekst", "id": "z5_cztery", "wiersze": 4,
+          "pytanie": "Wymień cztery czynności, które trzeba wykonać w nowym routerze, i przy każdej napisz, przed czym chroni." },
+        { "typ": "tekst", "id": "z5_pozorne", "wiersze": 3,
+          "pytanie": "Dlaczego ukrywanie nazwy sieci i filtrowanie adresów MAC nie są realnym zabezpieczeniem?" }
+      ]
+    },
+    {
+      "nr": 6,
+      "tytul": "NAT i model warstwowy",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Zadania dla tych, którzy celują w ocenę bardzo dobrą.",
+      "pola": [
+        { "typ": "tekst", "id": "z6_nat", "wiersze": 4,
+          "pytanie": "Wyjaśnij, w jaki sposób router rozróżnia odpowiedzi przeznaczone dla laptopa i dla telefonu, skoro oba korzystają z jednego adresu publicznego. Napisz też, dlaczego kamera w domu nie jest z tego powodu widoczna z internetu bez dodatkowej konfiguracji." },
+        { "typ": "tekst", "id": "z6_warstwy", "wiersze": 4,
+          "pytanie": "Przypisz do warstw modelu TCP/IP: HTTPS, IP, Ethernet, TCP. Przy każdej napisz jednym zdaniem, za co ta warstwa odpowiada." },
+        { "typ": "tekst", "id": "z6_udp", "wiersze": 3,
+          "pytanie": "Dlaczego rozmowa głosowa korzysta z UDP, a pobieranie pliku z TCP? Wskaż, co byłoby skutkiem zamiany tych protokołów miejscami." }
+      ]
+    },
+    {
+      "nr": 7,
+      "tytul": "Do wyboru — na ocenę wyższą",
+      "poziom": "wymagania dopełniające i wykraczające · oceny 5–6",
+      "polecenie": "Wykonaj jedno z zadań opisanych w sekcji „Na ocenę celującą” na stronie materiału.",
+      "pola": [
+        { "typ": "wybor", "id": "z7_wybor", "pytanie": "Wybieram zadanie",
+          "opcje": ["1 — projekt sieci pracowni z podsieciami", "2 — pomiary łącza o różnych porach dnia", "3 — tracert do trzech kontynentów", "4 — zadanie maturalne o adresacji IP"] },
+        { "typ": "tekst", "id": "z7_odp", "wiersze": 12, "pytanie": "Rozwiązanie wraz z obliczeniami i wnioskami" }
+      ]
+    }
+  ]
+}

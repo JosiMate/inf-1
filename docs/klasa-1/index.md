@@ -20,8 +20,8 @@ wspólnego z ocenami.
 | --- | :---: | --- |
 | **[Lekcja organizacyjna](wymagania-i-bhp.md)** | 1 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | **[Systemy operacyjne w środowisku sieciowym](systemy-operacyjne.md)** | 2 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
-| Nowe technologie i oprogramowanie | 1 | *w przygotowaniu* |
-| Sieci komputerowe – budowa i usługi | 2 | *w przygotowaniu* |
+| **[Nowe technologie i oprogramowanie](nowe-technologie.md)** | 1 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
+| **[Sieci komputerowe – budowa i usługi](sieci-komputerowe.md)** | 2 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | Protokoły IPv4 i IPv6 | 2 | *w przygotowaniu* |
 | E-usługi | 2 | *w przygotowaniu* |
 | Korzystanie z e-zasobów i współpraca zdalna | 1 | *w przygotowaniu* |

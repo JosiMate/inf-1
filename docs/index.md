@@ -20,7 +20,7 @@ realizujące informatykę w zakresie rozszerzonym.
 
     Sieci i urządzenia, edytor tekstu, strony WWW i grafika, arkusz kalkulacyjny, wstęp do programowania w Pythonie.
 
-    38 tematów · 90 godzin · gotowe 2 materiały
+    38 tematów · 90 godzin · gotowe 4 materiały
 
     [:material-format-list-bulleted: Tematy](klasa-1/index.md){ .md-button .md-button--primary }
     [:material-clipboard-check: Wymagania](klasa-1/wymagania-i-bhp.md){ .md-button }

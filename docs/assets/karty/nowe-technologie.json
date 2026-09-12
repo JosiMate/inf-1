@@ -1,0 +1,95 @@
+{
+  "id": "inf-tt-nowe-technologie",
+  "tytul": "Nowe technologie i oprogramowanie",
+  "przedmiot": "PCEiKZ Szczucin · informatyka, zakres rozszerzony",
+  "klasa": "1TT",
+  "sufiks": "NOWE-TECH",
+  "zadania": [
+    {
+      "nr": 1,
+      "tytul": "Etapy rozwoju technologii komputerowych",
+      "poziom": "wymagania podstawowe · ocena 3",
+      "polecenie": "Odpowiedzi krótkie, po jednym zdaniu. Korzystaj z tabeli z sekcji 1.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z1_etap1", "Etap, który pozwolił komputerowi trafić do domów", ""],
+          ["z1_etap2", "Etap, który sprawił, że wartością stał się dostęp do danych", ""],
+          ["z1_moore", "Co mówi prawo Moore'a", ""],
+          ["z1_dzis", "Skąd bierze się dziś wzrost wydajności, skoro tempo Moore'a zwolniło", ""]
+        ]},
+        { "typ": "tekst", "id": "z1_zycie", "wiersze": 4,
+          "pytanie": "Który etap zmienił najwięcej w życiu codziennym, a nie w samej technice? Uzasadnij, podając konkretną czynność, która przedtem wyglądała inaczej." }
+      ]
+    },
+    {
+      "nr": 2,
+      "tytul": "Karta technologii",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Ćwiczenie 1. Wybierz jedną technologię i jedno <strong>konkretne</strong> zastosowanie w wybranej dziedzinie — nie ogólnik.",
+      "pola": [
+        { "typ": "wybor", "id": "z2_wybor", "pytanie": "Wybrana technologia",
+          "opcje": ["Chmura obliczeniowa", "Sztuczna inteligencja", "Internet rzeczy", "Automatyka i robotyka", "Druk 3D", "AR / VR"] },
+        { "typ": "tabela", "wiersze": [
+          ["z2_zastosowanie", "Konkretne zastosowanie (gdzie, kto, co robi)", ""],
+          ["z2_problem", "1. Jaki problem rozwiązuje", ""],
+          ["z2_platnik", "2. Kto za to płaci", ""],
+          ["z2_dane", "3. Jakie dane zbiera i gdzie trafiają", ""],
+          ["z2_awaria", "4. Co się stanie, gdy przestanie działać", ""],
+          ["z2_odpowiedzialnosc", "5. Kto odpowiada za błąd", ""]
+        ]},
+        { "typ": "tabela", "wiersze": [
+          ["z2_zrodlo1", "Źródło 1 — tytuł i adres", "polskie"],
+          ["z2_zrodlo2", "Źródło 2 — tytuł i adres", "branżowe, może być anglojęzyczne"]
+        ]},
+        { "typ": "tekst", "id": "z2_ocena", "wiersze": 4,
+          "pytanie": "Twoja ocena: czy to rozwiązanie realnie się opłaca w opisanym zastosowaniu? Wskaż największą zaletę i największe ryzyko." }
+      ]
+    },
+    {
+      "nr": 3,
+      "tytul": "Licencje programów w pracowni",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Ćwiczenie 2. Sprawdź trzy programy na swoim stanowisku — <strong>Pomoc → O programie</strong>, plik <code>LICENSE</code> w katalogu instalacyjnym albo strona projektu.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z3_p1", "Program 1 — nazwa i wersja", ""],
+          ["z3_l1", "Program 1 — rodzaj licencji i czy wolno używać komercyjnie", ""],
+          ["z3_p2", "Program 2 — nazwa i wersja", ""],
+          ["z3_l2", "Program 2 — rodzaj licencji i czy wolno używać komercyjnie", ""],
+          ["z3_p3", "Program 3 — nazwa i wersja", ""],
+          ["z3_l3", "Program 3 — rodzaj licencji i czy wolno używać komercyjnie", ""],
+          ["z3_gdzie", "Gdzie znalazłeś te informacje", ""]
+        ]},
+        { "typ": "zrzut", "id": "z3_zrzut", "opis": "okno „O programie” albo treść pliku licencji jednego z programów" },
+        { "typ": "tekst", "id": "z3_wolne", "wiersze": 3,
+          "pytanie": "Wyjaśnij, dlaczego „wolne oprogramowanie” nie znaczy tego samego co „darmowe”. Podaj przykład sytuacji, w której za wolne oprogramowanie się płaci." }
+      ]
+    },
+    {
+      "nr": 4,
+      "tytul": "Chmura i sztuczna inteligencja w praktyce",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Odpowiedzi mają wyjaśniać mechanizm, nie powtarzać definicji ze strony.",
+      "pola": [
+        { "typ": "tekst", "id": "z4_model", "wiersze": 4,
+          "pytanie": "Szkoła rozważa trzy warianty: własny serwer w szkole, maszyna wirtualna wynajęta u dostawcy, gotowa usługa w przeglądarce. Przypisz im modele (własna infrastruktura / IaaS / SaaS) i wskaż, przy którym szkoła ma najwięcej pracy, a przy którym najmniej kontroli.",
+          "podpowiedz": "własny serwer — … , wynajęta maszyna wirtualna — … , gotowa usługa — …" },
+        { "typ": "tekst", "id": "z4_halucynacja", "wiersze": 4,
+          "pytanie": "Ćwiczenie 3 (rozszerzenie). Zapisz pytanie zadane narzędziu AI, jego odpowiedź, to co mówi źródło, i ocenę: poprawna, częściowo poprawna czy zmyślona." },
+        { "typ": "tekst", "id": "z4_aiact", "wiersze": 3,
+          "pytanie": "Serwis internetowy publikuje teksty tworzone przez model językowy i prowadzi czat obsługi klienta. Jakie obowiązki nakłada na niego AI Act od 2 sierpnia 2026 r.?" }
+      ]
+    },
+    {
+      "nr": 5,
+      "tytul": "Do wyboru — na ocenę wyższą",
+      "poziom": "wymagania dopełniające i wykraczające · oceny 5–6",
+      "polecenie": "Wykonaj jedno z zadań opisanych w sekcji „Na ocenę celującą” na stronie materiału.",
+      "pola": [
+        { "typ": "wybor", "id": "z5_wybor", "pytanie": "Wybieram zadanie",
+          "opcje": ["1 — opracowanie o nowej technologii", "2 — technologia, która nie wypaliła", "3 — własne zastosowanie w szkole lub gminie", "4 — porównanie GNU GPL v3 i MIT"] },
+        { "typ": "tekst", "id": "z5_odp", "wiersze": 12, "pytanie": "Opracowanie wraz ze źródłami" }
+      ]
+    }
+  ]
+}
